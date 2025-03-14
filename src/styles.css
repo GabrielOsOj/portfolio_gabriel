@@ -1,13 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+    --colors-color-one:#25262c;
+    --colors-color-two:#5d5f60;
+    --colors-color-three:#b6a571;
+    --colors-color-four:#3d3f43;
+    --colors-color-five:#232428;
+    --colors-color-six:#8c8b8e;
+}
+
 *{
     font-family: "Montserrat",sans-serif;
     
 }
 
-body{
+body,html{
 
     padding: 0;
     margin: 0;
+    scroll-snap-type: y mandatory;
 
 }

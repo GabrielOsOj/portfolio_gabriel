@@ -1,8 +1,36 @@
 .first-page{
 
-    background-color: #000;
+    background-color: var(--colors-color-one);
 
     width: 100vw;
     height: 100vh;
+    padding: 0;
+    margin: 0;
 
+    display: grid;
+    grid-template-columns: repeat(10, 120px);
+    grid-template-rows: repeat(8, auto);
+
+    
+}
+
+.first-page_navbar{
+
+    grid-column: 1/12;
+    grid-row: 1;
+
+   border: 1px solid red;
+}
+
+.first-page_center{
+    grid-column: 3/10;
+    grid-row: 3/7;
+
+    border: 1px solid #0ff;
+}   
+
+.first-page_footer{
+    grid-column: 1/12;
+    grid-row: 8/9;
+    border: 1px solid red;
 }
