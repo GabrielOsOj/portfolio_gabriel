@@ -3,12 +3,12 @@ import { NavbarComponent } from "../../Shared/navbar/navbar.component";
 import { FooterComponent } from "../../Shared/footer/footer.component";
 
 @Component({
-  selector: 'app-second-page',
+  selector: 'app-third-page',
   standalone: true,
   imports: [NavbarComponent, FooterComponent],
-  templateUrl: './second-page.component.html',
-  styleUrl: './second-page.component.css'
+  templateUrl: './third-page.component.html',
+  styleUrl: './third-page.component.css'
 })
-export class SecondPageComponent {
+export class ThirdPageComponent {
 
 }

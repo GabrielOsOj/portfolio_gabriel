@@ -1,33 +1,34 @@
-.second-page{
-
+.third-page{
     background-color: var(--colors-color-one);
 
     width: 100%;
-    height: 100%;
+    height: 100vh;
+
 
     display: grid;
     grid-template-columns: repeat(10, 120px);
     grid-template-rows: repeat(9, 80px);
 
+
 }
 
-.second-page-navbar{
+.third-page-navbar{
     grid-column: 1/12;
-    grid-row: 1;
-
-    border: 1px solid pink;
-
+    grid-row: 1/2;
+    
+    border: 1px solid violet;
 }
 
-.second-page-middle{
+.third-page-middle{
     grid-column: 2/11;
     grid-row: 2/8;
-    border: 1px solid cyan;
+
+    border: 1px solid greenyellow;
 }
 
-.second-page-footer{
+.third-page-footer{
     grid-column: 1/12;
     grid-row: 8/9;
 
-    border: 1px solid white;
+    border: 1px solid orange;
 }
