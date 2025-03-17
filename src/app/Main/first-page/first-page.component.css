@@ -19,7 +19,7 @@
     grid-column: 1/12;
     grid-row: 1;
 
-   border: 1px solid red;
+   /* border: 1px solid red; */
 }
 
 /*center box*/
@@ -27,14 +27,14 @@
     grid-column: 3/10;
     grid-row: 3/7;
 
-    border: 1px solid #0ff;
+    /* border: 1px solid #0ff; */
 
     display: flex;
     align-items: center;
     justify-content: center;
 
 
-    color: var(--colors-fonts-color);
+    color: var(--colors-fonts-color_one);
 }   
 
 .first-page_center-name{
@@ -75,5 +75,5 @@
 .first-page_footer{
     grid-column: 1/12;
     grid-row: 8/9;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }

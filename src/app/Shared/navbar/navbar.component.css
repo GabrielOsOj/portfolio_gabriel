@@ -12,7 +12,7 @@
 
 .navbar > div{
 
-    border: 1px solid goldenrod;
+    /* border: 1px solid goldenrod; */
     height: 100%;
 
 }
@@ -25,7 +25,7 @@
     justify-content: center;
     align-items: center;
 
-    color: var(--colors-fonts-color);
+    color: var(--colors-fonts-color_one);
 
 }
 
@@ -41,9 +41,5 @@
 
     cursor: pointer;
 
-    color: var(--colors-fonts-color);
-}
-
-.navbar-buttons-proyect{
-
+    color: var(--colors-fonts-color_two);
 }
