@@ -1,0 +1,35 @@
+[
+    {
+      "title": "Gestor de Tareas",
+      "description": "Aplicación para gestionar tareas con prioridad y fechas límite.",
+      "tecnologies": [
+        { "name": "Angular" },
+        { "name": "TypeScript" },
+        { "name": "Firebase" }
+      ],
+      "image": "assets/images/task-manager.png"
+    },
+    {
+      "title": "E-commerce",
+      "description": "Tienda en línea con integración de pagos y gestión de productos.",
+      "tecnologies": [
+        { "name": "Spring Boot" },
+        { "name": "Java" },
+        { "name": "MySQL" },
+        { "name": "Angular" }
+      ],
+      "image": "assets/images/ecommerce.png"
+    },
+    {
+      "title": "Chat en Tiempo Real",
+      "description": "Aplicación de chat con WebSockets y autenticación de usuarios.",
+      "tecnologies": [
+        { "name": "Node.js" },
+        { "name": "Express" },
+        { "name": "Socket.io" },
+        { "name": "MongoDB" }
+      ],
+      "image": "assets/images/chat-app.png"
+    }
+  ]
+  

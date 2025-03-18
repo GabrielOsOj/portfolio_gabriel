@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { NavbarComponent } from "../../Shared/navbar/navbar.component";
 import { FooterComponent } from "../../Shared/footer/footer.component";
 import { ProyectCardComponent } from './proyect-card/project-card.component';
+import { ProjectSvService } from '../../Core/services/projects/project-sv.service';
+import { ProjectIF } from '../../Core/models/project-if';
 
 @Component({
   selector: 'app-second-page',
@@ -12,6 +14,12 @@ import { ProyectCardComponent } from './proyect-card/project-card.component';
 })
 export class SecondPageComponent {
 
-  nextPage:string = "HABILIDADES"
+  nextPage:string = "HABILIDADES";
+  projectsList:Array<ProjectIF>; 
+
+  constructor(private projectSv:ProjectSvService){
+    this.projectsList = this.projectSv.getProjectList();
+  }
+  
 
 }
