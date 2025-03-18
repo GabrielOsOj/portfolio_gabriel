@@ -19,7 +19,9 @@ export class SecondPageComponent {
 
   constructor(private projectSv:ProjectSvService){
     this.projectsList = this.projectSv.getProjectList();
+    
   }
   
+
 
 }

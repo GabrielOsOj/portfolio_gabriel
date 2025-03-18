@@ -2,9 +2,9 @@
     <app-navbar class="second-page_navbar"></app-navbar>
 
     <div class="second-page_middle">
-        @for (item of [1,2,3,4]; track $index) {
+        @for (project of projectsList; track $index) {
         <div class="second-page_middle_card-container">
-            <proyect-card></proyect-card>
+            <project-card [projectData]="project"></project-card>
         </div>
         }
     </div>
