@@ -1,10 +1,14 @@
 <section class="second-page">
-    <app-navbar class="second-page-navbar"></app-navbar>
+    <app-navbar class="second-page_navbar"></app-navbar>
 
-    <div class="second-page-middle">
-
+    <div class="second-page_middle">
+        @for (item of [1,2,3,4]; track $index) {
+        <div class="second-page_middle_card-container">
+            <proyect-card></proyect-card>
+        </div>
+        }
     </div>
 
-    <app-footer class="second-page-footer" [nextPage]="nextPage"></app-footer>
+    <app-footer class="second-page_footer" [nextPage]="nextPage"></app-footer>
 
 </section>

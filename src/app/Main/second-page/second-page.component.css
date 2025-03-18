@@ -11,7 +11,8 @@
 
 }
 
-.second-page-navbar{
+/* Navbar */
+.second-page_navbar{
     grid-column: 1/12;
     grid-row: 1;
 
@@ -19,13 +20,16 @@
 
 }
 
-.second-page-middle{
+/* middle */
+.second-page_middle{
     grid-column: 2/11;
     grid-row: 2/8;
     border: 1px solid cyan;
 }
 
-.second-page-footer{
+
+/* footer */
+.second-page_footer{
     grid-column: 1/12;
     grid-row: 8/9;
 
