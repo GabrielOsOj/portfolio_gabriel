@@ -11,4 +11,7 @@ import { FooterComponent } from "../../Shared/footer/footer.component";
 })
 export class FirstPageComponent {
 
+  nextPage:string = "MIS PROYECTOS"
+
+
 }

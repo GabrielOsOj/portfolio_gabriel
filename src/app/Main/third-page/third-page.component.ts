@@ -11,4 +11,6 @@ import { FooterComponent } from "../../Shared/footer/footer.component";
 })
 export class ThirdPageComponent {
 
+  nextPage:string = "";
+
 }
