@@ -31,8 +31,15 @@
     align-items: center;
 }
 
-.second-page_middle_card-container{
+.second-page_middle_card-container{ 
+    width: 30%;
     height: 100%;
+}
+
+.second-page_middle_card-container:first-child,
+.second-page_middle_card-container:last-child
+{
+    height: 80%;
 }
 
 .ttbtn{

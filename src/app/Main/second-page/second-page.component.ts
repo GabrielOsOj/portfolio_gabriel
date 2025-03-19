@@ -34,7 +34,6 @@ export class SecondPageComponent {
       projectList.push(this.projectsList[i]);
     
     }
-
     this.lastIndexCarrousel+=3;
     this.threeProjects = projectList;
   }
@@ -43,14 +42,11 @@ export class SecondPageComponent {
     this.threeProjects.push(this.projectsList[this.lastIndexCarrousel]);
     this.threeProjects.shift()
 
-    console.log(this.lastIndexCarrousel);
     if(this.lastIndexCarrousel == this.projectsList.length-1){
       this.lastIndexCarrousel = 0;
       return;
     }
-
     this.lastIndexCarrousel++;
-
   }
 
 }
