@@ -14,7 +14,7 @@ export class ProjectSvService {
   constructor(private http:HttpClient) {}
 
   public getProjectList():Array<ProjectIF>{
-    console.log(projectData);
+  
     return projectData;
   }
 

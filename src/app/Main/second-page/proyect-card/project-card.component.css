@@ -1,6 +1,13 @@
 .project-card{
-    width: 100%;
+    width: 80%;
     height: 100%;
 
     background-color: #fff;
+    border: 1px solid salmon;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

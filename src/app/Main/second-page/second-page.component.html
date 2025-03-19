@@ -2,13 +2,15 @@
     <app-navbar class="second-page_navbar"></app-navbar>
 
     <div class="second-page_middle">
-        @for (project of projectsList; track $index) {
+        @for (project of threeProjects; track $index) {
         <div class="second-page_middle_card-container">
             <project-card [projectData]="project"></project-card>
         </div>
         }
     </div>
-
+    <div class="ttbtn" (click)="tt()">
+        cosa
+    </div>
     <app-footer class="second-page_footer" [nextPage]="nextPage"></app-footer>
 
 </section>

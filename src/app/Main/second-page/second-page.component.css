@@ -25,8 +25,19 @@
     grid-column: 2/11;
     grid-row: 2/8;
     border: 1px solid cyan;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
+.second-page_middle_card-container{
+    height: 100%;
+}
+
+.ttbtn{
+    background-color: var(--colors-color-two);
+}
 
 /* footer */
 .second-page_footer{

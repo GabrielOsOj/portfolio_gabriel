@@ -15,13 +15,42 @@ import { ProjectIF } from '../../Core/models/project-if';
 export class SecondPageComponent {
 
   nextPage:string = "HABILIDADES";
+  lastIndexCarrousel:number = 0;
+
   projectsList:Array<ProjectIF>; 
+  threeProjects:Array<ProjectIF> = new Array();
 
   constructor(private projectSv:ProjectSvService){
     this.projectsList = this.projectSv.getProjectList();
-    
+    this.getThreeElements();
   }
   
+  public getThreeElements():void{
 
+    let projectList:Array<ProjectIF> = new Array();
+  
+    for (let i = this.lastIndexCarrousel; i < 3; i++) {
+  
+      projectList.push(this.projectsList[i]);
+    
+    }
+
+    this.lastIndexCarrousel+=3;
+    this.threeProjects = projectList;
+  }
+
+  public tt(){
+    this.threeProjects.push(this.projectsList[this.lastIndexCarrousel]);
+    this.threeProjects.shift()
+
+    console.log(this.lastIndexCarrousel);
+    if(this.lastIndexCarrousel == this.projectsList.length-1){
+      this.lastIndexCarrousel = 0;
+      return;
+    }
+
+    this.lastIndexCarrousel++;
+
+  }
 
 }
