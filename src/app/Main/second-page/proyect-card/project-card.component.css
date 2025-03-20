@@ -16,6 +16,8 @@ h2{
     width: 100%;
     height: 10%;
     text-align: center;
+
+    color: var(--colors-fonts-color_one);
 }
 
 .project-card_tecnologiesContainer{
@@ -23,14 +25,20 @@ h2{
     width: 100%;
     height: 10%;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+
 }
+
 .project-card_tecnologiesContainer_iconContainer{
-    width: 20px;
-    height: 20px;
+    width: 2.5em;
+    height: 2.5em;
 }
 
 .project-card_tecnologiesContainer_iconContainer>img{
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
     height: 100%;
 }

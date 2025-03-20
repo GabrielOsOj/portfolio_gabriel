@@ -9,14 +9,16 @@ export class IconSvService {
   constructor() { }
 
   public getIcon(name:String):string{
-
-    console.log(name);
-    return 'assets/tecnologies/'+name.toLocaleLowerCase()+".svg";
+    return 'assets/svg/tecnologies/'+name.toLocaleLowerCase()+".svg";
 
   }
 
   public getIconList(names:Array<TecnologyIF>):Array<string>{
     return names.map(name => this.getIcon(name.name));
+  }
+
+  public getBrokenIcon():string{
+    return 'assets/svg/utils/forbidden.svg';
   }
 
 }

@@ -1,11 +1,12 @@
 import { Component, input, OnInit } from '@angular/core';
 import { ProjectIF } from '../../../Core/models/project-if';
 import { IconSvService } from '../../../Core/services/icons/icon-sv.service';
+import { ImgBrokenDirDirective } from '../../../Core/directives/imgBroken/img-broken-dir.directive';
 
 @Component({
   selector: 'project-card',
   standalone: true,
-  imports: [],
+  imports: [ImgBrokenDirDirective],
   templateUrl: './project-card.component.html',
   styleUrl: './project-card.component.css'
 })

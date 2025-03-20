@@ -38,7 +38,7 @@ export class SecondPageComponent {
     this.threeProjects = projectList;
   }
 
-  public tt(){
+  public nextProject(){
     this.threeProjects.push(this.projectsList[this.lastIndexCarrousel]);
     this.threeProjects.shift()
 
@@ -48,5 +48,19 @@ export class SecondPageComponent {
     }
     this.lastIndexCarrousel++;
   }
+
+  public prevProject(){
+    this.threeProjects.unshift(this.projectsList[this.lastIndexCarrousel]);
+    this.threeProjects.pop()
+
+    console.log(this.lastIndexCarrousel);
+
+    if(this.lastIndexCarrousel == 0){
+      this.lastIndexCarrousel = this.projectsList.length-1;
+      return;
+    }
+    this.lastIndexCarrousel--;
+  }
+
 
 }

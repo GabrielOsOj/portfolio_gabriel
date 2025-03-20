@@ -13,7 +13,7 @@
       "title": "E-commerce",
       "description": "Tienda en línea con integración de pagos y gestión de productos.",
       "tecnologies": [
-        { "name": "Spring Boot" },
+        { "name": "Spring" },
         { "name": "Java" },
         { "name": "MySQL" },
         { "name": "Angular" }
@@ -47,7 +47,7 @@
       "description": "Panel interactivo para visualizar datos de ventas con gráficos.",
       "tecnologies": [
         { "name": "Java" },
-        { "name": "Spring Boot" },
+        { "name": "Spring" },
         { "name": "MySQL" },
         { "name": "Docker" }
       ],
