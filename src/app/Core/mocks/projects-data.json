@@ -46,10 +46,10 @@
       "title": "Dashboard de Ventas",
       "description": "Panel interactivo para visualizar datos de ventas con gráficos.",
       "tecnologies": [
-        { "name": "React" },
-        { "name": "Chart.js" },
-        { "name": "Node.js" },
-        { "name": "MongoDB" }
+        { "name": "Java" },
+        { "name": "Spring Boot" },
+        { "name": "MySQL" },
+        { "name": "Docker" }
       ],
       "image": "assets/images/sales-dashboard.png"
     },

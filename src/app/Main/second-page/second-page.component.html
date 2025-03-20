@@ -4,11 +4,11 @@
     <div class="second-page_middle">
         @for (project of threeProjects; track $index) {
         <div class="second-page_middle_card-container">
-            <project-card [projectData]="project"></project-card>
+            <project-card class="mover" [projectData]="project"></project-card>
         </div>
         }
     </div>
-    
+
     <div class="ttbtn" (click)="tt()">
         cosa
     </div>

@@ -6,8 +6,9 @@
     height: 100%;
 
     display: grid;
-    grid-template-columns: repeat(10, 120px);
-    grid-template-rows: repeat(9, 80px);
+    grid-template-columns: repeat(10, 7.5em);
+    grid-template-rows: repeat(9, 5.1em);
+
 
 }
 
@@ -39,7 +40,8 @@
 .second-page_middle_card-container:first-child,
 .second-page_middle_card-container:last-child
 {
-    height: 80%;
+    height: 90%;
+    
 }
 
 .ttbtn{
