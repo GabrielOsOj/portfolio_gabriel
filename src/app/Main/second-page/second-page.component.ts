@@ -51,9 +51,7 @@ export class SecondPageComponent {
 
   public prevProject(){
     this.threeProjects.unshift(this.projectsList[this.lastIndexCarrousel]);
-    this.threeProjects.pop()
-
-    console.log(this.lastIndexCarrousel);
+    this.threeProjects.pop();
 
     if(this.lastIndexCarrousel == 0){
       this.lastIndexCarrousel = this.projectsList.length-1;

@@ -12,7 +12,6 @@ export class ImgBrokenDirDirective {
   ) { }
 
   @HostListener('error') brokenImg(){
-    console.log("Pum")
     this.htmlEl.nativeElement.src = this.iconSv.getBrokenIcon();
   }
 

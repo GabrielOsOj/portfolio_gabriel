@@ -1,4 +1,4 @@
-import { Component, input, OnInit } from '@angular/core';
+import { Component, input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { ProjectIF } from '../../../Core/models/project-if';
 import { IconSvService } from '../../../Core/services/icons/icon-sv.service';
 import { ImgBrokenDirDirective } from '../../../Core/directives/imgBroken/img-broken-dir.directive';
@@ -10,7 +10,7 @@ import { ImgBrokenDirDirective } from '../../../Core/directives/imgBroken/img-br
   templateUrl: './project-card.component.html',
   styleUrl: './project-card.component.css'
 })
-export class ProyectCardComponent implements OnInit{
+export class ProyectCardComponent implements OnChanges{
 
   projectData = input.required<ProjectIF>()
 
@@ -19,7 +19,7 @@ export class ProyectCardComponent implements OnInit{
   public constructor(private iconSv:IconSvService){
   }
 
-  ngOnInit(): void {
+  ngOnChanges(changes: SimpleChanges): void {
     this.iconsUrls = this.iconSv.getIconList(this.projectData().tecnologies);
   }
 
