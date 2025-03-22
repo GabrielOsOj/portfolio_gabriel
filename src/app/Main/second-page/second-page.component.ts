@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { NavbarComponent } from "../../Shared/navbar/navbar.component";
 import { FooterComponent } from "../../Shared/footer/footer.component";
-import { ProyectCardComponent } from './proyect-card/project-card.component';
+import { ProyectCardComponent } from './project-card/project-card.component';
 import { ProjectSvService } from './projects-service/project-sv.service';
-import { ProjectIF } from '../../Core/models/icon-if';
+import { ProjectIF } from './projects-models/project-if';
 
 @Component({
   selector: 'app-second-page',

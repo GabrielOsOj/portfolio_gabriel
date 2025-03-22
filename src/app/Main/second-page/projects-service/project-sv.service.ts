@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { ProjectIF } from '../../../Core/models/icon-if';
+import { ProjectIF } from '../projects-models/project-if';
 
 import projectData from '../../../Core/mocks/projects-data.json';
 
