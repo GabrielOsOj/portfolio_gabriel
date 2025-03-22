@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { TecnologyIF } from '../../models/project-if';
+import { IconIF } from '../../models/icon-if';
 
 @Injectable({
   providedIn: 'root'
@@ -8,12 +8,11 @@ export class IconSvService {
 
   constructor() { }
 
-  public getIcon(icon:TecnologyIF):string{
-    console.log(icon.name)
+  public getIcon(icon:IconIF):string{
     return 'assets/svg/tecnologies/'+icon.name.toLocaleLowerCase()+".svg";
   }
 
-  public getIconList(names:Array<TecnologyIF>):Array<string>{
+  public getIconList(names:Array<IconIF>):Array<string>{
     return names.map(iconName => this.getIcon(iconName));
   }
 

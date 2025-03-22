@@ -17,7 +17,7 @@
     grid-column: 1/12;
     grid-row: 1;
 
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
 
 }
 
@@ -25,7 +25,7 @@
 .second-page_middle{
     grid-column: 2/11;
     grid-row: 2/8;
-    border: 1px solid cyan;
+    /* border: 1px solid cyan; */
 
     display: flex;
     justify-content: space-around;
@@ -53,5 +53,5 @@
     grid-column: 1/12;
     grid-row: 8/9;
 
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }

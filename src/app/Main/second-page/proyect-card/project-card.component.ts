@@ -1,5 +1,5 @@
 import { Component, input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
-import { ProjectIF } from '../../../Core/models/project-if';
+import { ProjectIF } from '../../../Core/models/icon-if';
 import { IconSvService } from '../../../Core/services/icons/icon-sv.service';
 import { ImgBrokenDirDirective } from '../../../Core/directives/imgBroken/img-broken-dir.directive';
 

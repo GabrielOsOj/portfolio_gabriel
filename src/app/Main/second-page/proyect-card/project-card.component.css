@@ -3,7 +3,7 @@
     height: 100%;
 
     background-color: var(--colors-color-two);
-    border: 1px solid salmon;
+    /* border: 1px solid salmon; */
     margin: auto;
 
     display: flex;

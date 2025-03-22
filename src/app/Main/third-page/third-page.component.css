@@ -1,30 +1,67 @@
-.third-page{
+.third-page {
     background-color: var(--colors-color-one);
 
     width: 100%;
     height: 100vh;
 
     display: grid;
-    grid-template-columns: repeat(10, 120px);
-    grid-template-rows: repeat(9, 80px);
+    grid-template-columns: repeat(10, 7.5em);
+    grid-template-rows: repeat(9, 5.1em);
 
 }
 
-.third-page_navbar{
+/* Header */
+.third-page_navbar {
     grid-column: 1/12;
     grid-row: 1/2;
-    
+
     border: 1px solid violet;
 }
 
-.third-page_middle{
+/* middle */
+.third-page_middle {
     grid-column: 2/11;
     grid-row: 2/8;
 
     border: 1px solid greenyellow;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.third-page_footer{
+/* middle tecnologies*/
+.third-page_middle_tecnologies{
+    width: 50%;
+    height: 100%;
+
+    border: 1px solid red;
+}   
+
+.third-page_middle_tecnologies_frontend,
+.third-page_middle_tecnologies_backend,
+.third-page_middle_tecnologies_tools{
+    height: 33.3%;
+    width: 100%;
+
+    color: var(--colors-fonts-color_two);
+
+    border: 1px solid white;
+}
+
+
+/* middle about me*/
+.third-page_middle_about-me-and-studies{
+    width: 50%;
+    height: 100%;
+
+    border: 1px solid blue;
+}
+
+
+/* Footer */
+.third-page_footer {
     grid-column: 1/12;
     grid-row: 8/9;
 

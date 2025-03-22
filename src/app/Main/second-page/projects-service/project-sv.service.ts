@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { ProjectIF } from '../../models/project-if';
+import { ProjectIF } from '../../../Core/models/icon-if';
 
-import projectData from '../../mocks/projects-data.json';
+import projectData from '../../../Core/mocks/projects-data.json';
 
 
 @Injectable({
