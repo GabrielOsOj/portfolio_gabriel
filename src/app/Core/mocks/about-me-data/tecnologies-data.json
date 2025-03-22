@@ -1,14 +1,56 @@
 [
     {
-      "title": "frontend",
-      "icons": []
+        "title": "frontend",
+        "icons": [
+            {
+                "name": "Html"
+            },
+            {
+                "name": "Css"
+            },
+            {
+                "name": "Js"
+            },
+            {
+                "name": "typescript"
+            },
+            {
+                "name": "Angular"
+            }
+            
+        ]
     },
     {
-      "title": "backend",
-      "icons": []
+        "title": "backend",
+        "icons": [
+            {
+                "name": "Java"
+            },
+            {
+                "name": "Spring"
+            },
+            {
+                "name": "MySQL"
+            },
+            {
+                "name": "sqlite"
+            },{
+                "name": "docker"
+            }
+        ]
     },
     {
-      "title": "tools",
-      "icons": []
+        "title": "tools",
+        "icons": [
+            {
+                "name": "github"
+            },
+            {
+                "name": "postman"
+            },
+            {
+                "name": "swagger"
+            }
+        ]
     }
-  ]
+]

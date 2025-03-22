@@ -8,8 +8,8 @@ export interface TecnologiesDTO {
 
 }
 
-enum Positions{
-    Left,
-    Right,
-    Center
+export enum Positions{
+    Left = "Left",
+    Right = "Right",
+    Center = "Center"
 }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavbarComponent } from "../../Shared/navbar/navbar.component";
 import { FooterComponent } from "../../Shared/footer/footer.component";
-import { TecnologiesDTO } from './third-page-models/tecnologies-dto';
+import { Positions, TecnologiesDTO } from './third-page-models/tecnologies-dto';
 import { TecnologiesSvService } from './third-page-services/tecnologies-sv.service';
 import { TecnologiesIF } from './third-page-models/tecnologies-if';
 import { IconSvService } from '../../Core/services/icons/icon-sv.service';
@@ -14,15 +14,15 @@ import { TecnologiesCompComponent } from "./third-page-comp_tecnologies/tecnolog
   templateUrl: './third-page.component.html',
   styleUrl: './third-page.component.css'
 })
-export class ThirdPageComponent implements OnInit{
+export class ThirdPageComponent implements OnInit {
 
-  nextPage:string = "";
+  nextPage: string = "";
 
-  tecnosIF?:Array<TecnologiesIF>
+  tecnosIF?: Array<TecnologiesIF>
 
-  constructor(private tecnoSv:TecnologiesSvService,
-    private iconSv:IconSvService
-  ){
+  constructor(private tecnoSv: TecnologiesSvService,
+    private iconSv: IconSvService
+  ) {
     this.tecnosIF = this.tecnoSv.getTecnologiesData();
   }
 
@@ -31,19 +31,22 @@ export class ThirdPageComponent implements OnInit{
     this.fnLoadTecnos();
   }
 
-  tecnosDTO:Array<TecnologiesDTO> = [];
+  tecnosDTO: Array<TecnologiesDTO> = [];
 
-  private fnLoadTecnos():void{
-    let positions:number = 0;
-    this.tecnosIF?.forEach(tec=>{
-      
+  private fnLoadTecnos(): void {
+    let positionIndex: number = 0;
+ 
+
+    this.tecnosIF?.forEach(tec => {
+
       this.tecnosDTO.push(<TecnologiesDTO>{
         title: tec.title,
-        icons: tec.icons.map(icon=>this.iconSv.getIcon(icon)),
-        titlePosition: positions
+        icons: tec.icons.map(icon => this.iconSv.getIcon(icon)),
+        titlePosition: Object.values(Positions)[positionIndex]
       })
 
-      positions++;
+      positionIndex++;
+      
     })
   }
 
