@@ -1,17 +1,14 @@
 [
     {
       "title": "frontend",
-      "icons": [],
-      "titlePosition": 0
+      "icons": []
     },
     {
       "title": "backend",
-      "icons": [],
-      "titlePosition": 1
+      "icons": []
     },
     {
       "title": "tools",
-      "icons": [],
-      "titlePosition": 2
+      "icons": []
     }
   ]

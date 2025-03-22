@@ -1,21 +1,17 @@
 <section class="third-page">
     <app-navbar class="third-page_navbar"></app-navbar>
-    
+
     <div class="third-page_middle">
 
         <div class="third-page_middle_tecnologies">
+            @for (tecno of tecnosDTO; track $index) {
 
+            <app-tecnologies-comp [tecnDto]="tecno"></app-tecnologies-comp>
 
-            <div class="third-page_middle_tecnologies_backend">
-                <h1>BACKEND</h1>
-                
-            </div>
-            <div class="third-page_middle_tecnologies_tools">
-                <h1>TOOLS</h1>
-                
-            </div>
-            
+            }
+
         </div>
+        
         <div class="third-page_middle_about-me-and-studies"></div>
 
     </div>

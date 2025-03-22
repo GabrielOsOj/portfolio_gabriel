@@ -1,9 +1,9 @@
 import { IconIF } from "../../../Core/models/icon-if";
 
-export interface TecnCompDTO {
+export interface TecnologiesDTO {
 
     title:string,
-    icons:Array<IconIF>,
+    icons:Array<string>,
     titlePosition: Positions
 
 }

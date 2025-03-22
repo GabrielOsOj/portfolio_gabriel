@@ -1,28 +1,51 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavbarComponent } from "../../Shared/navbar/navbar.component";
 import { FooterComponent } from "../../Shared/footer/footer.component";
-import { TecnCompDTO } from './third-page-dto/tecn-comp-dto';
+import { TecnologiesDTO } from './third-page-models/tecnologies-dto';
 import { TecnologiesSvService } from './third-page-services/tecnologies-sv.service';
+import { TecnologiesIF } from './third-page-models/tecnologies-if';
+import { IconSvService } from '../../Core/services/icons/icon-sv.service';
+import { TecnologiesCompComponent } from "./third-page-comp_tecnologies/tecnologies-comp.component";
 
 @Component({
   selector: 'app-third-page',
   standalone: true,
-  imports: [NavbarComponent, FooterComponent],
+  imports: [NavbarComponent, FooterComponent, TecnologiesCompComponent],
   templateUrl: './third-page.component.html',
   styleUrl: './third-page.component.css'
 })
-export class ThirdPageComponent {
+export class ThirdPageComponent implements OnInit{
 
   nextPage:string = "";
 
-  tecnoDTO?:Array<TecnCompDTO>
+  tecnosIF?:Array<TecnologiesIF>
 
-  constructor(private tecnoSv:TecnologiesSvService){
-    this.tecnoDTO = this.tecnoSv.getTecnologiesData();
+  constructor(private tecnoSv:TecnologiesSvService,
+    private iconSv:IconSvService
+  ){
+    this.tecnosIF = this.tecnoSv.getTecnologiesData();
   }
 
-  private fnObjectFactory(){
 
+  ngOnInit(): void {
+    this.fnLoadTecnos();
   }
+
+  tecnosDTO:Array<TecnologiesDTO> = [];
+
+  private fnLoadTecnos():void{
+    let positions:number = 0;
+    this.tecnosIF?.forEach(tec=>{
+      
+      this.tecnosDTO.push(<TecnologiesDTO>{
+        title: tec.title,
+        icons: tec.icons.map(icon=>this.iconSv.getIcon(icon)),
+        titlePosition: positions
+      })
+
+      positions++;
+    })
+  }
+
 
 }

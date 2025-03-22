@@ -1,6 +1,6 @@
 import { Component, input } from '@angular/core';
 import { IconIF } from '../../../Core/models/icon-if';
-import { TecnCompDTO } from '../third-page-dto/tecn-comp-dto';
+import { TecnologiesDTO } from '../third-page-models/tecnologies-dto';
 
 @Component({
   selector: 'app-tecnologies-comp',
@@ -12,7 +12,7 @@ import { TecnCompDTO } from '../third-page-dto/tecn-comp-dto';
 export class TecnologiesCompComponent {
 
   
-  tecnDto = input.required<TecnCompDTO>()
+  tecnDto = input.required<TecnologiesDTO>()
 
 
 }
