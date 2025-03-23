@@ -7,13 +7,15 @@
             @for (tecno of tecnosDTO; track $index) {
             <div class="third-page_middle_tecnologies_container">
                 <app-tecnologies-comp [tecnDto]="tecno"></app-tecnologies-comp>
-
             </div>
             }
 
         </div>
 
-        <div class="third-page_middle_about-me-and-studies"></div>
+        <div class="third-page_middle_about-me-and-studies">
+            <app-text-card-comp [textBoxData]="fnLoadAboutME()"></app-text-card-comp>
+            <app-text-card-comp [textBoxData]="fnLoadStudies()"></app-text-card-comp>
+        </div>
 
     </div>
 

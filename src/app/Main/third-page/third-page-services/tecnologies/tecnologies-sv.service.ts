@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 
-import tecnoDataDTO from '../../../Core/mocks/about-me-data/tecnologies-data.json'
-import { TecnologiesDTO } from '../third-page-models/tecnologies-dto';
-import { TecnologiesIF } from '../third-page-models/tecnologies-if';
+import tecnoDataDTO from '../../../../Core/mocks/about-me-data/tecnologies-data.json'
+import { TecnologiesIF } from '../../third-page-models/tecnologies-if';
 
 @Injectable({
   providedIn: 'root'
