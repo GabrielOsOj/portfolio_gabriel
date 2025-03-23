@@ -3,7 +3,7 @@
     width: 100%;
     height: 100%;
 
-    color: var(--colors-fonts-color_two);
+    color: var(--colors-fonts-color_one);
     /* border: 1px solid white; */
 
     box-sizing: border-box;
@@ -59,7 +59,7 @@ h1 {
     align-items: center;
 
     box-sizing: border-box;
-    border: 4px solid rgb(219, 27, 177);
+    border: 4px solid var(--colors-test-color_one);
     /* box-shadow: 3px 3px pink; */
     border-radius: 2%;
 }
