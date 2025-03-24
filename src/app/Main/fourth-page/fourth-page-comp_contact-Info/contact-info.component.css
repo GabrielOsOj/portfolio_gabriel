@@ -6,8 +6,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    
 
-    color: var(--colors-fonts-color_one);
+    color: var(--colors-fonts-color_two);
 }
 
 .contact-info_text
@@ -22,18 +23,22 @@
 }
 
 .contact-info_text_title{
-    color: var(--colors-fonts-color_two);
+    color: var(--colors-fonts-color_one);
     
     margin: 0;
     
     text-align: center;
     font-size: 2.5em;
+    /* border: 1px solid green; */
 }
 
 .contact-info_text_text{
     
-    font-size: 1.2em;
+    font-size: 1em;
     text-align: center;
+    /* border: 1px solid green; */
+
+    margin: 0;
 }
 
 /* contact icons style*/

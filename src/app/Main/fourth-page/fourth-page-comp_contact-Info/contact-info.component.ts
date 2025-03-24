@@ -5,10 +5,12 @@ import { CommonModule } from '@angular/common';
 import { IconSvService } from '../../../Core/services/icons/icon-sv.service';
 import { IconIF } from '../../../Core/models/icon-if';
 
+import {ClipboardModule} from '@angular/cdk/clipboard';
+
 @Component({
   selector: 'app-contact-info',
   standalone: true,
-  imports: [IconInfoComponent,CommonModule],
+  imports: [IconInfoComponent,CommonModule,ClipboardModule],
   templateUrl: './contact-info.component.html',
   styleUrl: './contact-info.component.css'
 })
