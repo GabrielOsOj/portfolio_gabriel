@@ -2,6 +2,8 @@ import { Component, input } from '@angular/core';
 import { IconInfoComponent } from "./fourth-page-comp_icon-info/icon-info.component";
 import { ContactDataIF } from '../fourth-page-models/contact-data-if';
 import { CommonModule } from '@angular/common';
+import { IconSvService } from '../../../Core/services/icons/icon-sv.service';
+import { IconIF } from '../../../Core/models/icon-if';
 
 @Component({
   selector: 'app-contact-info',
@@ -13,5 +15,16 @@ import { CommonModule } from '@angular/common';
 export class ContactInfoComponent {
 
   contactData=input.required<ContactDataIF>();
+  
+  ubicationIcon:string;
+  emailIcon:string;
+
+  constructor(private iconSv:IconSvService){
+
+    this.ubicationIcon=iconSv.getUtilityIcon(<IconIF>{'name':'ubication'})
+    this.emailIcon=iconSv.getUtilityIcon(<IconIF>{'name':'email'})
+
+
+  }
 
 }

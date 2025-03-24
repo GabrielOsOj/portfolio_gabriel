@@ -20,7 +20,7 @@ export class ProyectCardComponent implements OnChanges{
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    this.iconsUrls = this.iconSv.getIconList(this.projectData().tecnologies);
+    this.iconsUrls = this.iconSv.getTecnoIconList(this.projectData().tecnologies);
   }
 
 }

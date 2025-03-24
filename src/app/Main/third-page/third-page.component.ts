@@ -42,7 +42,7 @@ export class ThirdPageComponent implements OnInit {
 
       this.tecnosDTO.push(<TecnologiesDTO>{
         title: tec.title,
-        icons: tec.icons.map(icon => this.iconSv.getIcon(icon)),
+        icons: tec.icons.map(icon => this.iconSv.getTecnoIcon(icon)),
         titlePosition: Object.values(Positions)[positionIndex]
       })
 
@@ -50,7 +50,6 @@ export class ThirdPageComponent implements OnInit {
       
     })
   }
-
 
   protected fnLoadStudies():TextBoxIf{
     return this.aboutAndStudiesSv.getStudies();

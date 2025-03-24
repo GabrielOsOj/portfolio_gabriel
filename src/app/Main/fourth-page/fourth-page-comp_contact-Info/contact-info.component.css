@@ -18,10 +18,12 @@
 
 /* contact info text*/
 .contact-info_text{
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
 }
 
 .contact-info_text_title{
+    color: var(--colors-fonts-color_two);
+    
     margin: 0;
     
     text-align: center;
@@ -41,5 +43,5 @@
     justify-content: space-evenly;
     align-items: center;
 
-    border: 1px solid paleturquoise;
+    /* border: 1px solid paleturquoise; */
 }

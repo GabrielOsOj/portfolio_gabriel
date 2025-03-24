@@ -9,8 +9,10 @@
     </div>
 
     <div class="contact-info_icons">
-        <app-icon-info></app-icon-info>
-        <app-icon-info></app-icon-info>
+        
+        <app-icon-info [emailField]="true" [iconUrl]="emailIcon" [text]="contactData().email"></app-icon-info>
+
+        <app-icon-info [iconUrl]="ubicationIcon" [text]="contactData().ubication"></app-icon-info>
     </div>
 
 </section>

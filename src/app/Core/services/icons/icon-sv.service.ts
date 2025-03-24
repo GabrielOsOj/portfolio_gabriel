@@ -8,12 +8,16 @@ export class IconSvService {
 
   constructor() { }
 
-  public getIcon(icon:IconIF):string{
+  public getTecnoIcon(icon:IconIF):string{
     return 'assets/svg/tecnologies/'+icon.name.toLocaleLowerCase()+".svg";
   }
 
-  public getIconList(names:Array<IconIF>):Array<string>{
-    return names.map(iconName => this.getIcon(iconName));
+  public getTecnoIconList(names:Array<IconIF>):Array<string>{
+    return names.map(iconName => this.getTecnoIcon(iconName));
+  }
+
+  public getUtilityIcon(icon:IconIF):string{
+    return 'assets/svg/utils/'+icon.name+".svg";
   }
 
   public getBrokenIcon():string{
