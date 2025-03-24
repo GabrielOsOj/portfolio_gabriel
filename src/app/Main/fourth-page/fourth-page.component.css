@@ -11,3 +11,54 @@
     grid-template-rows: repeat(9, 5.1em);
 
 }
+
+/* navbar */
+.fourth-page_navbar{
+    grid-column: 1/12;
+    grid-row: 1;
+
+    border: 1px solid pink;
+}
+
+/* middle*/
+.fourth-page_middle{
+    grid-column: 2/11;
+    grid-row: 2/8;
+
+    border: 1px solid red;
+}
+
+
+.fourth-page_middle{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* sizes middle subsections*/
+.fourth-page_middle_contact-info,
+.fourth-page_middle_form{
+
+    width: 50%;
+    height: 100%;
+
+}
+
+/* contact info styles*/
+.fourth-page_middle_contact-info{
+    
+    border: 1px solid violet;
+}
+
+/* contact form styles*/
+.fourth-page_middle_form{
+    border: 1px solid aquamarine;
+}
+
+/* footer */
+.fourth-page_footer{
+    grid-column: 1/12;
+    grid-row: 8/9;
+
+    border: 1px solid white;
+}

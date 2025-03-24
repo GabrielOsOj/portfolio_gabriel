@@ -1,6 +1,16 @@
 <section class="fourth-page">
     
-    <app-navbar class="fourth-page-navbar"></app-navbar>
-    <app-footer class="fourth-page-footer" [nextPage]="''"></app-footer>
+    <app-navbar class="fourth-page_navbar"></app-navbar>
+
+    <div class="fourth-page_middle">
+
+        <div class="fourth-page_middle_contact-info">
+            <app-contact-info></app-contact-info>
+        </div>
+        
+        <div class="fourth-page_middle_form"></div>
+    </div>
+
+    <app-footer class="fourth-page_footer" [nextPage]="''"></app-footer>
 
 </section>
