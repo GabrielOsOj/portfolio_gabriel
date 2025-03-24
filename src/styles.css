@@ -13,6 +13,7 @@
 
     /* --colors-test-color_one:rgb(219, 27, 177); */
     --colors-test-color_one:var(--colors-color-three);
+    --colors-test-color_two:#363636;
 }
 
 *{

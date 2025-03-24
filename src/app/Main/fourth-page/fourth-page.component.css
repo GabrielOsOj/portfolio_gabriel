@@ -17,7 +17,7 @@
     grid-column: 1/12;
     grid-row: 1;
 
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
 }
 
 /* middle*/
@@ -25,13 +25,14 @@
     grid-column: 2/11;
     grid-row: 2/8;
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 
 .fourth-page_middle{
     display: flex;
     justify-content: space-evenly;
+    gap: 4em;
     align-items: center;
 }
 
@@ -39,20 +40,25 @@
 .fourth-page_middle_contact-info,
 .fourth-page_middle_form{
 
-    width: 50%;
+    width: 45%;
     height: 100%;
 
+}
+
+.fourth-page_middle_form{
+   /* border: 1px solid paleturquoise; */
 }
 
 /* contact info styles*/
 .fourth-page_middle_contact-info{
     
-    border: 1px solid violet;
+    /* border: 1px solid violet; */
 }
 
 /* contact form styles*/
 .fourth-page_middle_form{
-    border: 1px solid aquamarine;
+    position: relative;
+    /* border: 1px solid aquamarine; */
 }
 
 /* footer */
@@ -60,5 +66,5 @@
     grid-column: 1/12;
     grid-row: 8/9;
 
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }

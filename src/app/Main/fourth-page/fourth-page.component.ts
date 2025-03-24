@@ -4,11 +4,12 @@ import { FooterComponent } from "../../Shared/footer/footer.component";
 import { ContactInfoComponent } from "./fourth-page-comp_contact-Info/contact-info.component";
 import { ContactDataService } from './fourth-page-services/contact-data.service';
 import { ContactDataIF } from './fourth-page-models/contact-data-if';
+import { ContactFormComponent } from "./fourth-page-comp_contact-form/contact-form.component";
 
 @Component({
   selector: 'app-fourth-page',
   standalone: true,
-  imports: [NavbarComponent, FooterComponent, ContactInfoComponent],
+  imports: [NavbarComponent, FooterComponent, ContactInfoComponent, ContactFormComponent],
   templateUrl: './fourth-page.component.html',
   styleUrl: './fourth-page.component.css'
 })
