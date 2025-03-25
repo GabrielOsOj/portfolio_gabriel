@@ -14,7 +14,7 @@
 
     box-sizing: border-box;
     border-radius: 3%;
-    border: 4px solid #7e4471;
+    border: 4px solid var(--colors-color-seven);
 
 }
 
@@ -81,7 +81,7 @@
     font-size: 1.3em;
 
     border-radius: 3%;
-    border: 2px solid #7e4471;
+    border: 2px solid var(--colors-color-seven);
     box-sizing: border-box;
 
 

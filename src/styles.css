@@ -10,6 +10,7 @@
     --colors-color-four:#3d3f43;
     --colors-color-five:#232428;
     --colors-color-six:#8c8b8e;
+    --colors-color-seven:#7e4471;
 
     /* --colors-test-color_one:rgb(219, 27, 177); */
     --colors-test-color_one:var(--colors-color-three);
