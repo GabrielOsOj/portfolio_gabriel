@@ -42,9 +42,12 @@
     flex-direction: column;
     gap: .5em;
 
+    position: relative;
 }
 
-.input-box>label{
+.contact-form_message-box_title,
+.contact-form_email-box_title,
+.contact-form_name-box_title{
     color: var(--colors-fonts-color_one);
     font-size: 1em;
 }
@@ -54,7 +57,8 @@
     height: 2.3em;
 
     border: none;
-    background-color: var(--colors-test-color_two);   
+    background-color: var(--colors-test-color_two);
+    color:  var(--colors-fonts-color_three);   
 }
 
 .input-box>textarea{
@@ -63,12 +67,24 @@
     height: 8em;
 }
 
+/*error messages*/
+
+.contact-form_name-box_error-msg,
+.contact-form_email-box_error-msg,
+.contact-form_message-box_error-msg
+{
+
+    color: var(--colors-error-color_one);
+    background-color: var(--colors-error-color_two);
+
+    position: absolute;
+    right: 0;
+}
+
 /*button*/
 .contact-form_button-container{
     width: 33%;
     height: 10%;
-
-
     /* border: 1px solid pink; */
 }
 
@@ -87,4 +103,8 @@
 
     color: var(--colors-fonts-color_one);
 
+}
+
+.button-active{
+    cursor: pointer;
 }
