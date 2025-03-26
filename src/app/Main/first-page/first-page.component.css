@@ -11,8 +11,34 @@
     grid-template-columns: repeat(10, 7.5em);
     grid-template-rows: repeat(9, 5.1em);
 
+    position: relative;
+
+    overflow: hidden;
     
 }
+
+/*background style*/
+.background-style_light{
+    /* background-color: var(--colors-background-color_one);
+     */
+    
+    background: radial-gradient(circle, var(--colors-background-color_one) 0%, var(--colors-color-one) 70%);
+
+    width: 75%;
+    height: 75%;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-10deg);
+
+    filter: blur(200px);
+
+    z-index: 1;
+
+    border-radius: 50%;
+}
+
 /*navbar*/
 .first-page_navbar{
 
@@ -33,6 +59,7 @@
     align-items: center;
     justify-content: center;
 
+    z-index: 100;
 
     color: var(--colors-fonts-color_one);
 }   
