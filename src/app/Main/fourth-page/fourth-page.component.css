@@ -1,0 +1,94 @@
+.fourth-page{
+    background-color: var(--colors-color-one);
+
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: repeat(10, 7.5em);
+    grid-template-rows: repeat(9, 5.1em);
+
+    position: relative;
+}
+
+/*background style*/
+.background-style_light{
+    /* background-color: var(--colors-color-two); */
+
+    background: radial-gradient(circle, var(--colors-background-color_four) 0%, var(--colors-color-one) 70%);
+
+    width: 75%;
+    height: 75%;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-10deg);
+
+    filter: blur(200px);
+
+    z-index: 1;
+    overflow: hidden;
+
+    border-radius: 50%;
+}
+
+/* navbar */
+.fourth-page_navbar{
+    grid-column: 1/12;
+    grid-row: 1;
+
+    /* border: 1px solid pink; */
+}
+
+/* middle*/
+.fourth-page_middle{
+    grid-column: 2/11;
+    grid-row: 2/8;
+
+    z-index: 100;
+    /* border: 1px solid red; */
+}
+
+
+.fourth-page_middle{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4em;
+    align-items: center;
+}
+
+/* sizes middle subsections*/
+.fourth-page_middle_contact-info,
+.fourth-page_middle_form{
+
+    width: 45%;
+    height: 100%;
+
+}
+
+.fourth-page_middle_form{
+   /* border: 1px solid paleturquoise; */
+}
+
+/* contact info styles*/
+.fourth-page_middle_contact-info{
+    
+    /* border: 1px solid violet; */
+}
+
+/* contact form styles*/
+.fourth-page_middle_form{
+    position: relative;
+    /* border: 1px solid aquamarine; */
+}
+
+/* footer */
+.fourth-page_footer{
+    grid-column: 1/12;
+    grid-row: 8/9;
+
+    /* border: 1px solid white; */
+}

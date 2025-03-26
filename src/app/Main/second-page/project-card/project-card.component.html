@@ -1,0 +1,23 @@
+<section class="project-card">
+
+    <div class="project-card_imgContainer">
+        <img src="" alt="">
+    </div>
+    <h2>{{projectData().title}}</h2>
+
+    <div class="project-card_tecnologiesContainer">
+        @for (icon of iconsUrls; track $index) {
+        <div class="project-card_tecnologiesContainer_iconContainer">
+
+            <img [src]="icon" alt="" appImgBrokenDir>
+
+        </div>
+
+        }
+    </div>
+
+    <p>
+        {{projectData().description}}
+    </p>
+
+</section>

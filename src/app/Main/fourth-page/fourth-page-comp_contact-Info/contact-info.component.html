@@ -1,0 +1,24 @@
+<section class="contact-info">
+
+
+    <div class="contact-info_text">
+        
+        <div class="contact-info_text_title-container">
+            <h1 class="contact-info_text_title-container_title">{{contactData().title.toUpperCase()}}</h1>
+
+        </div>
+
+        <p class="contact-info_text_text">{{contactData().subtitle}}</p>
+
+    </div>
+
+    <div class="contact-info_icons">
+
+        <app-icon-info [emailField]="true" [iconUrl]="emailIcon" [text]="contactData().email"
+            [cdkCopyToClipboard]="contactData().email"></app-icon-info>
+
+        <app-icon-info [iconUrl]="ubicationIcon" [text]="contactData().ubication"></app-icon-info>
+
+    </div>
+
+</section>

@@ -1,1 +1,28 @@
-<p>second-page works!</p>
+<section class="second-page">
+    <app-navbar class="second-page_navbar"></app-navbar>
+
+    <div class="background-style_light"></div>
+
+    <div class="second-page_middle">
+        @for (project of threeProjects; track $index) {
+            @if ($index == 0) {
+                <div class="second-page_middle_card-container" (click)="prevProject()">
+                    <project-card [projectData]="project"></project-card>
+                </div>
+            }@else if ($index == 2){
+                <div class="second-page_middle_card-container" (click)="nextProject()">
+                    <project-card [projectData]="project"></project-card>
+                </div>
+            }@else {
+                <div class="second-page_middle_card-container">
+                    <project-card [projectData]="project"></project-card>
+                </div>
+            }
+            
+
+        }
+    </div>
+
+    <app-footer class="second-page_footer" [nextPage]="nextPage"></app-footer>
+
+</section>

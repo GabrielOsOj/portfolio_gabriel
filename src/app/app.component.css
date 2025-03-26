@@ -1,0 +1,19 @@
+.main-page{
+   
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    flex-direction: column;
+
+    scrollbar-width: none;
+   
+}
+
+.main-page > div{
+ 
+    height: 100vh;
+
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+

@@ -1,0 +1,34 @@
+<section class="third-page">
+    <app-navbar class="third-page_navbar"></app-navbar>
+
+    <div class="background-style_light"></div>
+
+    <div class="third-page_middle">
+
+        <div class="third-page_middle_tecnologies">
+            @for (tecno of tecnosDTO; track $index) {
+            <div class="third-page_middle_tecnologies_container">
+                <app-tecnologies-comp [tecnDto]="tecno"></app-tecnologies-comp>
+            </div>
+            }
+
+        </div>
+
+        <div class="third-page_middle_about-me-and-studies">
+            <div class="third-page_middle_about-me-and-studies_about-me-container">
+                <app-text-card-comp [textBoxData]="fnLoadAboutME()"></app-text-card-comp>
+            </div>
+
+            <div class="third-page_middle_about-me-and-studies_studies-container">
+                <app-text-card-comp [toRight]="true" [textBoxData]="fnLoadStudies()">
+
+                </app-text-card-comp>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <app-footer class="third-page_footer" [nextPage]="nextPage"></app-footer>
+</section>

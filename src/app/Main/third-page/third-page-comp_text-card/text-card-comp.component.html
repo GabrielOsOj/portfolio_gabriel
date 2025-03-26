@@ -1,0 +1,11 @@
+<div class="text-box">
+    <div class="text-box_title-container">
+        <h1 [ngClass]="{'text-box_title-container_title':true,
+        'right':toRight()}">
+            {{textBoxData().title.toUpperCase()}}</h1>
+    </div>
+    <div class="text-box_text-container">
+        <p class="text-box_text-container_text">
+            {{textBoxData().text}}</p>
+    </div>
+</div>

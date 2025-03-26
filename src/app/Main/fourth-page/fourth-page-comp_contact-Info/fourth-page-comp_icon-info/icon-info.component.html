@@ -1,0 +1,14 @@
+<section class="icon">
+    <div class="icon_img-container">
+        <img class="icon_img-container_img" [src]="iconUrl()" alt="" appImgBrokenDir>
+    </div>
+    <div class="icon_text-container">
+        <p class="icon_text-container_text">
+            @if (emailField()) {
+            Copiar direccion de email<br>al portapeles
+            }@else {
+            {{text()}}
+            }
+        </p>
+    </div>
+</section>

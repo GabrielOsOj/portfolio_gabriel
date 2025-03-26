@@ -1,0 +1,110 @@
+.contact-form{
+    width: 100%;
+    height: 100%;
+
+    margin: auto;
+
+    /* background-color: var(--colors-color-five); */
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    box-sizing: border-box;
+    border-radius: 3%;
+    border: 4px solid var(--colors-color-seven);
+
+}
+
+.contact-form_title-container{
+    width: 100%;
+    height: 10%;
+    font-size: 2em;
+}
+
+.contact-form_title-container_title{
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: var(--colors-fonts-color_one);
+
+    /* border: 1px solid white; */
+}
+
+.input-box{
+    width: 80%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+
+    position: relative;
+}
+
+.contact-form_message-box_title,
+.contact-form_email-box_title,
+.contact-form_name-box_title{
+    color: var(--colors-fonts-color_one);
+    font-size: 1em;
+}
+
+.input-box>input,textarea{
+
+    height: 2.3em;
+
+    border: none;
+    background-color: var(--colors-test-color_two);
+    color:  var(--colors-fonts-color_three);   
+}
+
+.input-box>textarea{
+
+    resize: none;
+    height: 8em;
+}
+
+/*error messages*/
+
+.contact-form_name-box_error-msg,
+.contact-form_email-box_error-msg,
+.contact-form_message-box_error-msg
+{
+
+    color: var(--colors-error-color_one);
+    background-color: var(--colors-error-color_two);
+
+    position: absolute;
+    right: 0;
+}
+
+/*button*/
+.contact-form_button-container{
+    width: 33%;
+    height: 10%;
+    /* border: 1px solid pink; */
+}
+
+.contact-form_button-container_button{
+
+    width: 90%;
+    height: 90%;
+
+    background-color: var(--colors-color-one);
+    font-size: 1.3em;
+
+    border-radius: 3%;
+    border: 2px solid var(--colors-color-seven);
+    box-sizing: border-box;
+
+
+    color: var(--colors-fonts-color_one);
+
+}
+
+.button-active{
+    cursor: pointer;
+}

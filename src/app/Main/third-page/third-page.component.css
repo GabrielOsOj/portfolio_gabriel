@@ -1,0 +1,108 @@
+.third-page {
+    background-color: var(--colors-color-one);
+
+    width: 100%;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: repeat(10, 7.5em);
+    grid-template-rows: repeat(9, 5.1em);
+
+    position: relative;
+    overflow: hidden;
+}
+
+/*background style*/
+.background-style_light{
+    /* background-color: var(--colors-background-color_three); */
+
+    background: radial-gradient(circle, var(--colors-background-color_three) 0%, var(--colors-color-one) 70%);
+
+    width: 75%;
+    height: 75%;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-10deg);
+
+    filter: blur(200px);
+
+    z-index: 1;
+
+    border-radius: 50%;
+}
+
+/* Header */
+.third-page_navbar {
+    grid-column: 1/12;
+    grid-row: 1/2;
+
+    /* border: 1px solid violet; */
+}
+
+/* middle */
+.third-page_middle {
+    grid-column: 2/11;
+    grid-row: 2/8;
+
+    /* border: 1px solid greenyellow; */
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    z-index: 100;
+}
+
+/* middle sections size*/
+.third-page_middle_tecnologies,
+.third-page_middle_about-me-and-studies{
+
+    width: 45%;
+    height: 100%;
+
+}
+
+
+/* middle tecnologies*/
+.third-page_middle_tecnologies{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /* border: 1px solid red; */
+}   
+
+.third-page_middle_tecnologies_container{
+    width: 100%;
+    height: 30%;
+}
+
+
+/* middle about me*/
+.third-page_middle_about-me-and-studies{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: center; */
+
+    /* border: 1px solid blue; */
+}
+
+.third-page_middle_about-me-and-studies_studies-container,
+.third-page_middle_about-me-and-studies_about-me-container{
+    width: 100%;
+    height: 33%;
+}
+
+/* Footer */
+.third-page_footer {
+    grid-column: 1/12;
+    grid-row: 8/9;
+
+    /* border: 1px solid orange; */
+}

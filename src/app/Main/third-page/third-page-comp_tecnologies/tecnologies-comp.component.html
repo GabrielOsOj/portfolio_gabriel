@@ -1,0 +1,15 @@
+<section class="tecnologies">
+    <!-- <h1 class="{{tecnDto().titlePosition.toString()}}">{{tecnDto().title.toUpperCase()}}</h1> -->
+    <div class="tecnologies_title">
+        <h1>{{tecnDto().title.toUpperCase()}}</h1>
+    </div>
+
+    <div class="tecnologies_icons">
+        @for (icon of tecnDto().icons; track $index) {
+        <div class="tecnologies_icons_icon-container">
+            <img [src]="icon">
+        </div>
+        }
+    </div>
+
+</section>
