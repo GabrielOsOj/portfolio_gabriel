@@ -8,10 +8,19 @@
     margin: 0;
 
     display: grid;
-    grid-template-columns: repeat(10, 7.5em);
-    grid-template-rows: repeat(9, 5.1em);
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: 1fr 3fr 3fr 1fr;
 
     position: relative;
+
+    grid-template-areas:
+
+        "nav nav nav nav"
+        "mid mid mid mid"
+        "mid mid mid mid"
+        "footer footer footer footer ";
+  
+    ;
 
     overflow: hidden;
     
@@ -41,17 +50,22 @@
 
 /*navbar*/
 .first-page_navbar{
-
+/* 
     grid-column: 1/12;
-    grid-row: 1;
+    grid-row: 1; */
+
+    grid-area: nav;
 
    /* border: 1px solid red; */
 }
 
 /*center box*/
 .first-page_center{
-    grid-column: 3/10;
-    grid-row: 3/7;
+
+    /* grid-column: 3/10; */
+    /* grid-row: 3/7; */
+
+    grid-area: mid;
 
     /* border: 1px solid #0ff; */
 
@@ -100,7 +114,13 @@
 
 /*footer*/
 .first-page_footer{
-    grid-column: 1/12;
-    grid-row: 8/9;
+    /* grid-column: 1/12; */
+    /* grid-row: 8/9; */
+
+    grid-area: footer;
     /* border: 1px solid red; */
 }
+
+/*Responsive*/
+
+/**/
