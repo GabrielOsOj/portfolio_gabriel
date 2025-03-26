@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { EmailSvService } from '../fourth-page-services/email/email-sv.service';
 
 @Component({
   selector: 'app-contact-form',
@@ -18,7 +19,7 @@ export class ContactFormComponent {
 
   commonsValidators:Array<any>;
 
-  constructor() {
+  constructor(private emailSv:EmailSvService) {
 
     this.commonsValidators =[
       Validators.required,
@@ -45,7 +46,7 @@ export class ContactFormComponent {
   }
 
   public handleSubmit() {
-    console.log(this.contactForm.value);
+    this.emailSv.sendMessage(this.contactForm.value);
   }
 
 }
