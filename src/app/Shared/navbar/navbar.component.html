@@ -1,9 +1,8 @@
 <section class="navbar">
-   
+
     <div class="navbar-icon">
 
     </div>
-
 
     <div class="navbar-buttons">
 
@@ -14,7 +13,31 @@
             <h1>CONTACTO</h1>
         </div>
 
+    </div>
+
+
+    <div class="navbar-buttons-mobile" (click)="fnOpenMenu()">
+
+        <img class="navbar-buttons-mobile-icon" [src]="menuIcon" alt="" srcset="">
 
     </div>
+
+    <div class="navbar-menu-mobile" *ngIf="menuOpen">
+
+        <div class="navbar-menu-mobile-icon_container" (click)="fnExitMenu()">
+            <img class="navbar-buttons-mobile-icon" [src]="upArrowIcon" alt="">
+        </div>
+        <div class="navbar-menu-mobile_titles-container">
+
+            <h1>PROYECTOS</h1>
+            <h1>CONOCIMIENTOS</h1>
+            <h1>CONTACTO</h1>
+
+        </div>
+        <div class="navbar-menu-mobile-icon_container">
+
+        </div>
+    </div>
+
 
 </section>
