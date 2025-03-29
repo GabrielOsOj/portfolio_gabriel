@@ -5,15 +5,21 @@
     height: 100vh;
 
     display: grid;
-    grid-template-columns: repeat(10, 7.5em);
-    grid-template-rows: repeat(9, 5.1em);
+    grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+    grid-template-rows: 1fr 4fr 4fr 1fr;
 
     position: relative;
-    overflow: hidden;
+
+    grid-template-areas:
+        "nav nav nav nav nav"
+        "mid mid mid mid mid"
+        "mid mid mid mid mid"
+        "footer footer footer footer footer";
+
 }
 
 /*background style*/
-.background-style_light{
+.background-style_light {
     /* background-color: var(--colors-background-color_three); */
 
     background: radial-gradient(circle, var(--colors-background-color_three) 0%, var(--colors-color-one) 70%);
@@ -35,16 +41,15 @@
 
 /* Header */
 .third-page_navbar {
-    grid-column: 1/12;
-    grid-row: 1/2;
 
+    grid-area: nav;
     /* border: 1px solid violet; */
 }
 
 /* middle */
 .third-page_middle {
-    grid-column: 2/11;
-    grid-row: 2/8;
+
+    grid-area: mid;
 
     /* border: 1px solid greenyellow; */
 
@@ -57,16 +62,15 @@
 
 /* middle sections size*/
 .third-page_middle_tecnologies,
-.third-page_middle_about-me-and-studies{
+.third-page_middle_about-me-and-studies {
 
     width: 45%;
     height: 100%;
 
 }
 
-
 /* middle tecnologies*/
-.third-page_middle_tecnologies{
+.third-page_middle_tecnologies {
 
     display: flex;
     flex-direction: column;
@@ -74,16 +78,15 @@
     align-items: center;
 
     /* border: 1px solid red; */
-}   
+}
 
-.third-page_middle_tecnologies_container{
+.third-page_middle_tecnologies_container {
     width: 100%;
     height: 30%;
 }
 
-
 /* middle about me*/
-.third-page_middle_about-me-and-studies{
+.third-page_middle_about-me-and-studies {
 
     display: flex;
     flex-direction: column;
@@ -94,15 +97,72 @@
 }
 
 .third-page_middle_about-me-and-studies_studies-container,
-.third-page_middle_about-me-and-studies_about-me-container{
+.third-page_middle_about-me-and-studies_about-me-container {
     width: 100%;
     height: 33%;
 }
 
 /* Footer */
 .third-page_footer {
-    grid-column: 1/12;
-    grid-row: 8/9;
+
+    grid-area: footer;
 
     /* border: 1px solid orange; */
 }
+
+/* responsive */
+
+@media (width<1030px) {
+
+    .third-page_middle {
+        flex-direction: column;
+        
+        justify-content: center;
+
+    }
+
+    /*tecnologies and about me*/
+    .third-page_middle_tecnologies,
+    .third-page_middle_about-me-and-studies {
+        width: 80%;
+        height: 100%;
+    }
+
+    .third-page_middle_about-me-and-studies {
+        width: 80%;
+        height: 100%;
+        /* justify-content: center; */
+    }
+
+}
+
+@media(width<1030px) and (width>850px) {
+
+
+}
+
+@media(width<851px) and (width>451px) {}
+
+@media (width<450px) and (width>400px) {
+    .third-page_middle_about-me-and-studies{
+        justify-content: flex-start;
+        gap: 1em;
+    }
+}
+
+@media (width<400px) {
+    .third-page_middle_about-me-and-studies{
+        justify-content: flex-start;
+        gap: 1em;
+    }
+}
+
+/* resposive sizes */
+/*
+
+@media (width<1030px) {}
+@media(width<1030px) and (width>431px){}
+@media (width<431px) and (width>400px){}
+@media (width<400px) {}
+
+*/

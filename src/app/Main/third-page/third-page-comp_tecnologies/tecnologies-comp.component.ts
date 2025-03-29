@@ -10,13 +10,9 @@ import { CommonModule } from '@angular/common';
   templateUrl: './tecnologies-comp.component.html',
   styleUrl: './tecnologies-comp.component.css'
 })
-export class TecnologiesCompComponent implements OnInit{
+export class TecnologiesCompComponent{
 
   
   tecnDto = input.required<TecnologiesDTO>()
-
-  ngOnInit(): void {
-    console.log(this.tecnDto().titlePosition);
-  }
 
 }

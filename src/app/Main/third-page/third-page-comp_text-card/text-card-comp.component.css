@@ -1,4 +1,4 @@
-.text-box{
+.text-box {
     width: 100%;
     height: 100%;
 
@@ -8,7 +8,7 @@
     /* overflow: hidden; */
 }
 
-.text-box_title-container{
+.text-box_title-container {
     width: 100%;
     height: 20%;
 
@@ -19,7 +19,7 @@
     /* border: 1px solid fuchsia; */
 }
 
-.text-box_title-container_title{
+.text-box_title-container_title {
     font-size: 1.5em;
 
     position: absolute;
@@ -29,7 +29,7 @@
     background-color: var(--colors-color-one);
 }
 
-.text-box_text-container{
+.text-box_text-container {
     width: 100%;
     height: auto;
 
@@ -41,7 +41,7 @@
     border-radius: 2%;
 }
 
-.text-box_text-container_text{
+.text-box_text-container_text {
     text-align: left;
     margin-left: 0;
     margin-right: 0;
@@ -49,7 +49,76 @@
     /* border: 1px solid red; */
 }
 
-.right{
+.right {
     left: auto;
     right: 1em;
+}
+
+@media (width<1030px) {
+
+    .text-box_title-container_title {
+        font-size: 2em;
+    }
+
+    .text-box_text-container_text {
+        font-size: 1.5em;
+    }
+}
+
+@media(width<1000px) and (width>850px) {
+
+    .text-box_title-container_title {
+        font-size: 2em;
+    }
+
+    .text-box_text-container_text {
+        font-size: 1.3em;
+    }
+
+}
+
+@media(width<851px) and (width>781px) {
+
+    .text-box_title-container_title {
+        font-size: 2em;
+    }
+
+    .text-box_text-container_text {
+        font-size: 1.2em;
+    }
+}
+
+@media (width<780px) and (width>451px) {
+
+    .text-box_title-container_title {
+        font-size: 1.6em;
+    }
+
+    .text-box_text-container_text {
+        font-size: 1.1em;
+    }
+
+}
+
+@media (width<450px) and (width>400px){
+
+    .text-box_title-container_title {
+        font-size: 1.2em;
+    }
+
+    .text-box_text-container_text {
+        font-size: .7em;
+    }
+}
+
+@media (width<400px) {
+
+
+    .text-box_title-container_title {
+        font-size: 1em;
+    }
+
+    .text-box_text-container_text {
+        font-size: .6em;
+    }
 }

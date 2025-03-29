@@ -144,15 +144,11 @@ h5 {
         grid-template-columns: 1fr;
     }
 
-    .first-page_center {
-        /* border: 1px solid palevioletred; */
-    }
+  
 }
 
 @media (width<431px) and (width>389px){
-    .first-page_center {
-        /* border: 1px solid gold; */
-    }
+ 
 
     .first-page_center-name_presentation {
         margin-bottom: -1em;
@@ -168,9 +164,7 @@ h5 {
 }
 
 @media(width<389px){
-    .first-page_center {
-        /* border: 1px solid violet; */
-    }
+
 
     .first-page_center-name_presentation {
         margin-bottom: -1em;
