@@ -5,7 +5,10 @@
       "tecnologies": [
         { "name": "Angular" },
         { "name": "TypeScript" },
+        { "name": "Firebase" },
+        { "name": "TypeScript" },
         { "name": "Firebase" }
+        
       ],
       "image": "assets/images/task-manager.png"
     },
@@ -15,6 +18,7 @@
       "tecnologies": [
         { "name": "Spring" },
         { "name": "Java" },
+        { "name": "MySQL" },
         { "name": "MySQL" },
         { "name": "Angular" }
       ],
