@@ -3,24 +3,36 @@
 
     <div class="background-style_light"></div>
 
-    <div class="second-page_middle">
+    <div class="second-page_middle_three-card">
         @for (project of threeProjects; track $index) {
-            @if ($index == 0) {
-                <div class="second-page_middle_card-container" (click)="prevProject()">
-                    <project-card [projectData]="project"></project-card>
-                </div>
-            }@else if ($index == 2){
-                <div class="second-page_middle_card-container" (click)="nextProject()">
-                    <project-card [projectData]="project"></project-card>
-                </div>
-            }@else {
-                <div class="second-page_middle_card-container">
-                    <project-card [projectData]="project"></project-card>
-                </div>
-            }
-            
-
+        @if ($index == 0) {
+        <div class="second-page_middle_card-container" (click)="prevProject()">
+            <project-card [projectData]="project"></project-card>
+        </div>
+        }@else if ($index == 2){
+        <div class="second-page_middle_card-container" (click)="nextProject()">
+            <project-card [projectData]="project"></project-card>
+        </div>
+        }@else {
+        <div class="second-page_middle_card-container">
+            <project-card [projectData]="project"></project-card>
+        </div>
         }
+        }
+    </div>
+
+    <div class="second-page_middle_one-card">
+
+        <div class="second-page_middle_one-card_cards-container">
+
+            @for (project of projectsList; track $index) {
+
+            <div class="second-page_middle_one-card_card-container">
+                <project-card [projectData]="project"></project-card>
+            </div>
+            }
+        </div>
+
     </div>
 
     <app-footer class="second-page_footer" [nextPage]="nextPage"></app-footer>

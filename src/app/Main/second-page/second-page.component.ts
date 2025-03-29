@@ -1,14 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { NavbarComponent } from "../../Shared/navbar/navbar.component";
 import { FooterComponent } from "../../Shared/footer/footer.component";
 import { ProyectCardComponent } from './project-card/project-card.component';
 import { ProjectSvService } from './projects-service/project-sv.service';
 import { ProjectIF } from './projects-models/project-if';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-second-page',
   standalone: true,
-  imports: [NavbarComponent, FooterComponent, ProyectCardComponent],
+  imports: [NavbarComponent, FooterComponent, ProyectCardComponent,CommonModule],
   templateUrl: './second-page.component.html',
   styleUrl: './second-page.component.css'
 })
@@ -17,12 +18,15 @@ export class SecondPageComponent {
   nextPage:string = "HABILIDADES";
   lastIndexCarrousel:number = 0;
 
+  isLargeWidth:boolean;
+
   projectsList:Array<ProjectIF>; 
   threeProjects:Array<ProjectIF> = new Array();
 
   constructor(private projectSv:ProjectSvService){
     this.projectsList = this.projectSv.getProjectList();
     this.getThreeElements();
+    this.isLargeWidth = false;
   }
   
   public getThreeElements():void{
@@ -60,5 +64,15 @@ export class SecondPageComponent {
     this.lastIndexCarrousel--;
   }
 
+  @HostListener ('window:resize', ['$event'])
+  onResize(event:Event){
+    this.isLargeWidth = window.innerWidth > 750;
+    this.setLargeSize();
+  }
+
+  public setLargeSize():boolean{
+    console.log(window.innerWidth)
+    return false;
+  }
 
 }
