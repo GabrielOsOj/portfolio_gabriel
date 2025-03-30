@@ -19,7 +19,7 @@ import { TextBoxIf } from './third-page-models/text-box-if';
 })
 export class ThirdPageComponent implements OnInit {
 
-  nextPage: string = "";
+  nextPage: string = "CONTACTO";
 
   tecnosIF?: Array<TecnologiesIF>
 
