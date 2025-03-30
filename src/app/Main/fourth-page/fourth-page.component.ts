@@ -5,22 +5,31 @@ import { ContactInfoComponent } from "./fourth-page-comp_contact-Info/contact-in
 import { ContactDataService } from './fourth-page-services/contact-data/contact-data.service';
 import { ContactDataIF } from './fourth-page-models/contact-data-if';
 import { ContactFormComponent } from "./fourth-page-comp_contact-form/contact-form.component";
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-fourth-page',
   standalone: true,
-  imports: [NavbarComponent, FooterComponent, ContactInfoComponent, ContactFormComponent],
+  imports: [NavbarComponent, FooterComponent, ContactInfoComponent, ContactFormComponent, CommonModule],
   templateUrl: './fourth-page.component.html',
   styleUrl: './fourth-page.component.css'
 })
 export class FourthPageComponent {
 
   contactData:ContactDataIF;
+
+  formVisible:boolean = false;
   
   constructor(private contactDataSv:ContactDataService){
     this.contactData = contactDataSv.getContactData();
   }
 
+  public fnOpenMenu():void{
+    this.formVisible = true;
+  }
 
-
+  
+  public fnCloseMenu(event:any):void{
+    this.formVisible = false;
+  }
 }

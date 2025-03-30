@@ -13,6 +13,17 @@
         <div class="fourth-page_middle_form">
             <app-contact-form></app-contact-form>
         </div>
+
+        <div *ngIf="formVisible" (click)="fnCloseMenu($event)"
+         class="fourth-page_middle_form_responsive-container" >
+            <button class="fourth-page_middle_form_responsive-container_close-btn" (click)="fnCloseMenu($event)">X</button>
+            <app-contact-form (click)="$event.stopPropagation()"></app-contact-form>
+        </div> 
+
+        <div class="fourth-page_middle_form_responsive_button-container">
+            <button (click)="fnOpenMenu()">FORMULARIO DE CONTACTO</button>
+        </div>
+
     </div>
 
     <app-footer class="fourth-page_footer" [nextPage]="''"></app-footer>
