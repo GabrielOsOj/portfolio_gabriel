@@ -20,6 +20,10 @@ export class IconSvService {
     return 'assets/svg/utils/'+icon.name+".svg";
   }
 
+  public getMainIcon():string{
+    return "/god_icon.png";
+  }
+
   public getBrokenIcon():string{
     return 'assets/svg/utils/forbidden.svg';
   }

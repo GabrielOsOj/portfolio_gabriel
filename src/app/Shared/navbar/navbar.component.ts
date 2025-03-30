@@ -14,12 +14,14 @@ export class NavbarComponent {
 
   menuIcon:string;
   upArrowIcon:string;
+  mainIco:string;
 
   menuOpen:boolean;
 
   constructor(private iconSv:IconSvService){
     this.menuIcon = iconSv.getUtilityIcon(<IconIF>{name:"menu"});
     this.upArrowIcon = iconSv.getUtilityIcon(<IconIF>{name:"up_arrow"});
+    this.mainIco = iconSv.getMainIcon();
     this.menuOpen = false;
   }
 
