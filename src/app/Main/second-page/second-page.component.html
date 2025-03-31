@@ -1,20 +1,21 @@
 <section class="second-page">
-    <app-navbar class="second-page_navbar"></app-navbar>
+    <app-navbar [animationsActive]="false" class="second-page_navbar
+    animate__animated animate__fadeInDown animate__delay-2s"></app-navbar>
 
-    <div class="background-style_light"></div>
+    <div class="background-style_light animate__animated animate__fadeIn animate__slower animate__delay-3s"></div>
 
     <div class="second-page_middle_three-card">
         @for (project of threeProjects; track $index) {
         @if ($index == 0) {
-        <div class="second-page_middle_card-container" (click)="prevProject()">
+        <div class="second-page_middle_card-container animate__animated animate__fadeInUp animate__slow" (click)="prevProject()">
             <project-card [projectData]="project"></project-card>
         </div>
         }@else if ($index == 2){
-        <div class="second-page_middle_card-container" (click)="nextProject()">
+        <div class="second-page_middle_card-container animate__animated animate__fadeInUp animate__slow" (click)="nextProject()">
             <project-card [projectData]="project"></project-card>
         </div>
         }@else {
-        <div class="second-page_middle_card-container">
+        <div class="second-page_middle_card-container animate__animated animate__fadeInDown animate__slow">
             <project-card [projectData]="project"></project-card>
         </div>
         }
@@ -35,6 +36,6 @@
 
     </div>
 
-    <app-footer class="second-page_footer" [nextPage]="nextPage"></app-footer>
+    <app-footer [animationsActive]="false" class="second-page_footer animate__animated animate__fadeInUp animate__delay-2s" [nextPage]="nextPage"></app-footer>
 
 </section>

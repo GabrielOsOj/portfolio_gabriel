@@ -15,7 +15,7 @@ export class NavbarComponent implements OnChanges{
   menuIcon:string;
   upArrowIcon:string;
   mainIco:string;
-  disableAnimations = input<boolean>();
+  animationsActive = input<boolean>(true);
 
   menuOpen:boolean;
 
