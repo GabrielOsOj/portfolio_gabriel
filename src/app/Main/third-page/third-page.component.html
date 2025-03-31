@@ -1,13 +1,16 @@
 <section class="third-page">
-    <app-navbar class="third-page_navbar"></app-navbar>
+    <app-navbar [animationsActive]="false" class="third-page_navbar 
+    animate__animated animate__fadeInDown animate__delay-2s"></app-navbar>
 
-    <div class="background-style_light"></div>
+    <div class="background-style_light animate__animated animate__fadeIn animate__slower animate__delay-3s"> </div>
 
     <div class="third-page_middle">
 
         <div class="third-page_middle_tecnologies">
             @for (tecno of tecnosDTO; track $index) {
-            <div class="third-page_middle_tecnologies_container">
+            <div class="third-page_middle_tecnologies_container
+                animate__animated animate__flipInX
+            ">
                 <app-tecnologies-comp [tecnDto]="tecno"></app-tecnologies-comp>
             </div>
             }
@@ -15,11 +18,13 @@
         </div>
 
         <div class="third-page_middle_about-me-and-studies">
-            <div class="third-page_middle_about-me-and-studies_about-me-container">
+            <div class="third-page_middle_about-me-and-studies_about-me-container
+            animate__animated animate__rotateInDownRight animate__delay-1s">
                 <app-text-card-comp [textBoxData]="fnLoadAboutME()"></app-text-card-comp>
             </div>
 
-            <div class="third-page_middle_about-me-and-studies_studies-container">
+            <div class="third-page_middle_about-me-and-studies_studies-container
+            animate__animated animate__rotateInUpRight animate__delay-1s">
                 <app-text-card-comp [toRight]="true" [textBoxData]="fnLoadStudies()">
 
                 </app-text-card-comp>
@@ -28,6 +33,7 @@
 
     </div>
 
-    <app-footer class="third-page_footer" [nextPage]="nextPage"></app-footer>
-    
+    <app-footer [animationsActive]="false" class="third-page_footer 
+    animate__animated animate__fadeInUp animate__delay-2s" [nextPage]="nextPage"></app-footer>
+
 </section>
