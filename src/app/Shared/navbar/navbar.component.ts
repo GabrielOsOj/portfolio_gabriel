@@ -1,7 +1,8 @@
-import { Component, input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { IconSvService } from '../../Core/services/icons/icon-sv.service';
 import { IconIF } from '../../Core/models/icon-if';
 import { CommonModule } from '@angular/common';
+import { NavbarMenuSvService } from '../../Core/services/navbar/navbar-menu-sv.service';
 
 @Component({
   selector: 'app-navbar',
@@ -10,28 +11,31 @@ import { CommonModule } from '@angular/common';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
-export class NavbarComponent{
+export class NavbarComponent implements OnInit{
 
   menuIcon:string;
   upArrowIcon:string;
   mainIco:string;
   animationsActive = input<boolean>(true);
 
-  menuOpen:boolean;
+  menuOpen:boolean = false;
 
-  constructor(private iconSv:IconSvService){
+  constructor(private iconSv:IconSvService,
+    private navbarSv:NavbarMenuSvService
+  ){
     this.menuIcon = iconSv.getUtilityIcon(<IconIF>{name:"menu"});
     this.upArrowIcon = iconSv.getUtilityIcon(<IconIF>{name:"up_arrow"});
     this.mainIco = iconSv.getMainIcon();
-    this.menuOpen = false;
+    
+  }
+
+  ngOnInit(): void {
+    this.navbarSv.$menuOpen.subscribe(data => this.menuOpen = data)
   }
 
   public fnOpenMenu():void{
-    this.menuOpen = true;
-  }
-
-  public fnExitMenu():void{
-    this.menuOpen = false;
+    this.navbarSv.openMenu()
+    // this.menuOpen = true;
   }
 
 }

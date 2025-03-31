@@ -1,10 +1,13 @@
-import { AfterViewInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, HostListener } from '@angular/core';
+import { AfterViewInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, HostListener, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FirstPageComponent } from "./Main/first-page/first-page.component";
 import { SecondPageComponent } from "./Main/second-page/second-page.component";
 import { ThirdPageComponent } from "./Main/third-page/third-page.component";
 import { FourthPageComponent } from "./Main/fourth-page/fourth-page.component";
 import { CommonModule } from '@angular/common';
+import { NavbarMenuSvService } from './Core/services/navbar/navbar-menu-sv.service';
+import { IconSvService } from './Core/services/icons/icon-sv.service';
+import { IconIF } from './Core/models/icon-if';
 
 @Component({
   selector: 'app-root',
@@ -14,24 +17,31 @@ import { CommonModule } from '@angular/common';
   styleUrl: './app.component.css',
   
 })
-export class AppComponent{
+export class AppComponent implements OnInit{
   title = 'portfolio-gabriel_ojeda';
   
-  ArIsVisible:Array<boolean> = [true,false,false,false]
+  ArIsVisible:Array<boolean> = [true,false,false,false];
+
+  isMenuOpen:boolean = false;
+  icoArrowUp:string;
 
   @HostListener('window:scroll')
   private onScroll($event:Event):void {
-    this.activateComponents(window.pageYOffset)
-    console.log(window.pageYOffset)
-    
+    this.activateComponents(window.pageYOffset);
   };
 
   constructor(private element:ElementRef,
-    private cdr:ChangeDetectorRef
+    private cdr:ChangeDetectorRef,
+    private iconSv:IconSvService,
+    private navbarSv:NavbarMenuSvService
   ){
-
+    this.icoArrowUp = iconSv.getUtilityIcon(<IconIF>{name:"up_arrow"});
   }
  
+  ngOnInit(): void {
+    this.navbarSv.$menuOpen.subscribe(data => this.isMenuOpen = data);
+  }
+
   public activateComponents(Yoffset:number){
     this.ArIsVisible[0] = true;
     if(Yoffset>650){
@@ -48,4 +58,10 @@ export class AppComponent{
     }
   }
   
+
+  /* responsive */
+  public fnExitMenu():void{
+    this.navbarSv.closeMenu();
+  }
+
 }

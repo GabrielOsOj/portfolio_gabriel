@@ -14,4 +14,20 @@
     </div> 
 </section>
 
+<section class="navbar-menu-mobile" *ngIf="isMenuOpen">
+
+    <div class="navbar-menu-mobile-icon_container" (click)="fnExitMenu()">
+        <img class="navbar-buttons-mobile-icon" [src]="icoArrowUp" alt="">
+    </div>
+    <div class="navbar-menu-mobile_titles-container">
+
+        <h1>PROYECTOS</h1>
+        <h1>CONOCIMIENTOS</h1>
+        <h1>CONTACTO</h1>
+
+    </div>
+    <div class="navbar-menu-mobile-icon_container">
+
+    </div>
+</section>
 <!-- <router-outlet></router-outlet> -->
