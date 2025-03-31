@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input, OnChanges, SimpleChanges } from '@angular/core';
 import { IconSvService } from '../../Core/services/icons/icon-sv.service';
 import { IconIF } from '../../Core/models/icon-if';
 import { CommonModule } from '@angular/common';
@@ -10,11 +10,12 @@ import { CommonModule } from '@angular/common';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnChanges{
 
   menuIcon:string;
   upArrowIcon:string;
   mainIco:string;
+  disableAnimations = input<boolean>();
 
   menuOpen:boolean;
 
@@ -23,6 +24,9 @@ export class NavbarComponent {
     this.upArrowIcon = iconSv.getUtilityIcon(<IconIF>{name:"up_arrow"});
     this.mainIco = iconSv.getMainIcon();
     this.menuOpen = false;
+  }
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log("aa")
   }
 
   public fnOpenMenu():void{

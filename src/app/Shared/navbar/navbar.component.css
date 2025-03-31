@@ -18,6 +18,8 @@
         "icon icon space buttons buttons"
 
     ;
+
+    overflow: hidden;
 }
 
 .navbar>div {
@@ -47,6 +49,11 @@
     width: 22%;
     height: 50%;
 }
+.navbar-icon_icon-container:hover{
+    animation-name: heartBeat;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
 
 .navbar-icon_icon-container>img{
     width: 100%;
@@ -70,6 +77,12 @@
     cursor: pointer;
 
     color: var(--colors-fonts-color_two);
+
+}
+
+.navbar-buttons-proyect:hover,
+.navbar-buttons-contact:hover{
+    color: var(--colors-fonts-color_one);
 }
 
 .navbar-buttons-mobile{
@@ -118,6 +131,7 @@
 
     .navbar-buttons{
         visibility: hidden;
+        animation: none;
     }
 
     .navbar{

@@ -16,4 +16,9 @@
     scroll-snap-stop: always;
 }
 
-
+.main-page-first_page,
+.main-page-second_page,
+.main-page-third_page,
+.main-page-fourth-page{
+    background-color: var(--colors-color-one);
+}

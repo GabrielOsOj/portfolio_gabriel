@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, input } from '@angular/core';
 import { NavbarComponent } from "../../Shared/navbar/navbar.component";
 import { FooterComponent } from "../../Shared/footer/footer.component";
 import { ProyectCardComponent } from './project-card/project-card.component';
@@ -13,8 +13,10 @@ import { CommonModule } from '@angular/common';
   templateUrl: './second-page.component.html',
   styleUrl: './second-page.component.css'
 })
-export class SecondPageComponent {
+export class SecondPageComponent implements AfterViewInit{
 
+  isVisible=input<boolean>();
+  
   nextPage:string = "HABILIDADES";
   lastIndexCarrousel:number = 0;
 
@@ -23,12 +25,18 @@ export class SecondPageComponent {
   projectsList:Array<ProjectIF>; 
   threeProjects:Array<ProjectIF> = new Array();
 
-  constructor(private projectSv:ProjectSvService){
+  constructor(private projectSv:ProjectSvService,
+    private element:ElementRef
+  ){
     this.projectsList = this.projectSv.getProjectList();
     this.getThreeElements();
     this.isLargeWidth = false;
   }
   
+  ngAfterViewInit(): void {
+    console.log(this.element.nativeElement.offsetHeight)
+  }
+
   public getThreeElements():void{
 
     let projectList:Array<ProjectIF> = new Array();

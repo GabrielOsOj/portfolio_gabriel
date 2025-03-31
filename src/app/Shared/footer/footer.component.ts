@@ -10,5 +10,6 @@ import { Component, input } from '@angular/core';
 export class FooterComponent {
 
   nextPage = input.required<string>();
+  disableAnimations = input<boolean>();
 
 }

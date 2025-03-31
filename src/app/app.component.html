@@ -1,16 +1,16 @@
 <section class="main-page">
 
     <div class="main-page-first_page">
-        <app-first-page></app-first-page>
+        <app-first-page *ngIf="ArIsVisible[0]"></app-first-page>
     </div>
     <div class="main-page-second_page">
-        <app-second-page></app-second-page>
+        <app-second-page *ngIf="ArIsVisible[1]"></app-second-page>
     </div>
     <div class="main-page-third_page">
-        <app-third-page></app-third-page>
+        <app-third-page *ngIf="ArIsVisible[2]"></app-third-page>
     </div>
     <div class="main-page-fourth-page">
-        <app-fourth-page></app-fourth-page>
+        <app-fourth-page *ngIf="ArIsVisible[3]"></app-fourth-page>
     </div> 
 </section>
 

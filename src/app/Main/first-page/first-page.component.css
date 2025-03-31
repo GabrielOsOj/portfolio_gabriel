@@ -50,7 +50,7 @@
 
 /*navbar*/
 .first-page_navbar {
-    /* 
+    /*
     grid-column: 1/12;
     grid-row: 1; */
 
@@ -100,11 +100,13 @@ h5 {
     align-self: flex-start;
     font-size: .9em;
     margin-bottom: -2em;
+
 }
 
 .first-page_center-name_title {
 
     font-size: 9em;
+
 }
 
 .first-page_center-name_subtitle {
@@ -144,20 +146,20 @@ h5 {
         grid-template-columns: 1fr;
     }
 
-  
+
 }
 
 @media (width<431px) and (width>389px){
- 
+
 
     .first-page_center-name_presentation {
         margin-bottom: -1em;
     }
-    
-    .first-page_center-name_title {    
+
+    .first-page_center-name_title {
         font-size: 5em;
     }
-    
+
     .first-page_center-name_subtitle {
         margin-top: -1em;
     }
@@ -170,11 +172,11 @@ h5 {
         margin-bottom: -1em;
         font-size: .7em;
     }
-    
-    .first-page_center-name_title {    
+
+    .first-page_center-name_title {
         font-size: 4em;
     }
-    
+
     .first-page_center-name_subtitle {
         margin-top: -1em;
         font-size: .7em;

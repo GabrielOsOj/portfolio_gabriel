@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, input, OnInit } from '@angular/core';
 import { NavbarComponent } from "../../Shared/navbar/navbar.component";
 import { FooterComponent } from "../../Shared/footer/footer.component";
 import { Positions, TecnologiesDTO } from './third-page-models/tecnologies-dto';
@@ -18,6 +18,9 @@ import { TextBoxIf } from './third-page-models/text-box-if';
   styleUrl: './third-page.component.css'
 })
 export class ThirdPageComponent implements OnInit {
+
+  isVisible=input<boolean>();
+  
 
   nextPage: string = "CONTACTO";
 
