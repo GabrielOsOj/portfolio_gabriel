@@ -1,6 +1,6 @@
 <section class="footer">
 
-    <div class="footer-social">
+    <div [ngClass]="{'footer-social':true, 'lastPage':isLastPage()}">
         <div
             [ngClass]="{'footer-social_icon':true,  'animate__animated animate__bounceInLeft animate__delay-3s':animationsActive()}">
             <img src="/assets/svg/linkedin.svg" alt="linkedin.ico">
@@ -15,11 +15,11 @@
         </div>
     </div>
 
-    <div class="footer-middle">
-        a
+    <div *ngIf="!isLastPage()" class="footer-middle">
+        
     </div>
 
-    <div
+    <div *ngIf="!isLastPage()"
         [ngClass]="{'footer-scrool_sign':true, 'animate__animated animate__bounceInDown animate__delay-3s animate__slow':animationsActive()}">
         <h4 class="footer-scroll_sign-text">
             {{nextPage()}}

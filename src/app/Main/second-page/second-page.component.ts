@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './second-page.component.html',
   styleUrl: './second-page.component.css'
 })
-export class SecondPageComponent implements AfterViewInit{
+export class SecondPageComponent{
 
   isVisible=input<boolean>();
   
@@ -26,15 +26,10 @@ export class SecondPageComponent implements AfterViewInit{
   threeProjects:Array<ProjectIF> = new Array();
 
   constructor(private projectSv:ProjectSvService,
-    private element:ElementRef
   ){
     this.projectsList = this.projectSv.getProjectList();
     this.getThreeElements();
     this.isLargeWidth = false;
-  }
-  
-  ngAfterViewInit(): void {
-    console.log(this.element.nativeElement.offsetHeight)
   }
 
   public getThreeElements():void{
@@ -72,15 +67,6 @@ export class SecondPageComponent implements AfterViewInit{
     this.lastIndexCarrousel--;
   }
 
-  @HostListener ('window:resize', ['$event'])
-  onResize(event:Event){
-    this.isLargeWidth = window.innerWidth > 750;
-    this.setLargeSize();
-  }
 
-  public setLargeSize():boolean{
-    console.log(window.innerWidth)
-    return false;
-  }
 
 }

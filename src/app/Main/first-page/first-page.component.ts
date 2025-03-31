@@ -23,6 +23,4 @@ export class FirstPageComponent implements AfterViewInit{
     console.log(this.element.nativeElement.offsetHeight)
   }
 
-  
-
 }

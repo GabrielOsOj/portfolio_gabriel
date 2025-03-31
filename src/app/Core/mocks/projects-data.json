@@ -1,16 +1,11 @@
 [
     {
-      "title": "Gestor de Tareas",
-      "description": "Aplicación para gestionar tareas con prioridad y fechas límite.",
+      "title": "Bot de musica",
+      "description": "Bot para reproducir musica en un servidor de discord",
       "tecnologies": [
-        { "name": "Angular" },
-        { "name": "TypeScript" },
-        { "name": "Firebase" },
-        { "name": "TypeScript" },
-        { "name": "Firebase" }
-        
+        { "name": "Java" }
       ],
-      "image": "assets/images/task-manager.png"
+      "image": "assets/projectsImgs/proj-img_discord-bot.png"
     },
     {
       "title": "E-commerce",

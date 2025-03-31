@@ -13,4 +13,5 @@ export class FooterComponent {
   nextPage = input.required<string>();
   animationsActive = input<boolean>(true);
 
+  isLastPage = input<boolean>(false);
 }
