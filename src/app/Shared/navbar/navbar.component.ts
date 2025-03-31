@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
-export class NavbarComponent implements OnChanges{
+export class NavbarComponent{
 
   menuIcon:string;
   upArrowIcon:string;
@@ -24,9 +24,6 @@ export class NavbarComponent implements OnChanges{
     this.upArrowIcon = iconSv.getUtilityIcon(<IconIF>{name:"up_arrow"});
     this.mainIco = iconSv.getMainIcon();
     this.menuOpen = false;
-  }
-  ngOnChanges(changes: SimpleChanges): void {
-    console.log("aa")
   }
 
   public fnOpenMenu():void{

@@ -1,8 +1,8 @@
 <section class="fourth-page">
     
-    <app-navbar class="fourth-page_navbar"></app-navbar>
+    <app-navbar [animationsActive]="false" class="fourth-page_navbar animate__animated animate__fadeInDown animate__delay-2s"></app-navbar>
 
-    <div class="background-style_light"></div>
+    <div class="background-style_light animate__animated animate__fadeIn animate__slower animate__delay-3s"></div>
 
     <div class="fourth-page_middle">
 
@@ -10,7 +10,7 @@
             <app-contact-info [contactData]="contactData"></app-contact-info>
         </div>
 
-        <div class="fourth-page_middle_form">
+        <div class="fourth-page_middle_form animate__animated animate__fadeInRight" >
             <app-contact-form></app-contact-form>
         </div>
 
@@ -20,12 +20,13 @@
             <app-contact-form (click)="$event.stopPropagation()"></app-contact-form>
         </div> 
 
-        <div class="fourth-page_middle_form_responsive_button-container">
+        <div class="fourth-page_middle_form_responsive_button-container
+        animate__animated animate__backInUp animate__delay-2s" >
             <button (click)="fnOpenMenu()">FORMULARIO DE CONTACTO</button>
         </div>
 
     </div>
 
-    <app-footer class="fourth-page_footer" [nextPage]="''"></app-footer>
+    <app-footer [animationsActive]="false" class="fourth-page_footer animate__animated animate__fadeInUp animate__delay-2s" [nextPage]="''"></app-footer>
 
 </section>
