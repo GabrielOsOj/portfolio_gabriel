@@ -18,6 +18,8 @@ export class SecondPageComponent{
   isVisible=input<boolean>();
   
   nextPage:string = "HABILIDADES";
+  nextSection:string = "tecnologies"
+
   lastIndexCarrousel:number = 0;
 
   isLargeWidth:boolean;

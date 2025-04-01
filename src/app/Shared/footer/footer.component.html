@@ -20,7 +20,9 @@
     </div>
 
     <div *ngIf="!isLastPage()"
-        [ngClass]="{'footer-scrool_sign':true, 'animate__animated animate__bounceInDown animate__delay-3s animate__slow':animationsActive()}">
+        [ngClass]="{'footer-scrool_sign':true, 'animate__animated animate__bounceInDown animate__delay-3s animate__slow':animationsActive()}"
+        (click)="goToSec()"
+        >
         <h4 class="footer-scroll_sign-text">
             {{nextPage()}}
         </h4>

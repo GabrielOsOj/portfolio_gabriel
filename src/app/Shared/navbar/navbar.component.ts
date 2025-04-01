@@ -3,6 +3,7 @@ import { IconSvService } from '../../Core/services/icons/icon-sv.service';
 import { IconIF } from '../../Core/models/icon-if';
 import { CommonModule } from '@angular/common';
 import { NavbarMenuSvService } from '../../Core/services/navbar/navbar-menu-sv.service';
+import { GoToSvService } from '../../Core/services/goTo/go-to-sv.service';
 
 @Component({
   selector: 'app-navbar',
@@ -21,7 +22,8 @@ export class NavbarComponent implements OnInit{
   menuOpen:boolean = false;
 
   constructor(private iconSv:IconSvService,
-    private navbarSv:NavbarMenuSvService
+    private navbarSv:NavbarMenuSvService,
+    private goToSv: GoToSvService
   ){
     this.menuIcon = iconSv.getUtilityIcon(<IconIF>{name:"menu"});
     this.upArrowIcon = iconSv.getUtilityIcon(<IconIF>{name:"up_arrow"});
@@ -36,6 +38,11 @@ export class NavbarComponent implements OnInit{
   public fnOpenMenu():void{
     this.navbarSv.openMenu()
     // this.menuOpen = true;
+  }
+
+  public fnGoTo(section:string){
+    console.log(section)
+    this.goToSv.goToSection(section);
   }
 
 }

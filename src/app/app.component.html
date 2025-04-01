@@ -1,15 +1,15 @@
 <section class="main-page">
 
-    <div class="main-page-first_page">
+    <div class="main-page-first_page" #presentation>
         <app-first-page *ngIf="ArIsVisible[0]"></app-first-page>
     </div>
-    <div class="main-page-second_page">
-        <app-second-page *ngIf="ArIsVisible[1]"></app-second-page>
+    <div class="main-page-second_page" #projects>
+        <app-second-page *ngIf="ArIsVisible[1]" ></app-second-page>
     </div>
-    <div class="main-page-third_page">
+    <div class="main-page-third_page" #tecnologies>
         <app-third-page *ngIf="ArIsVisible[2]"></app-third-page>
     </div>
-    <div class="main-page-fourth-page">
+    <div class="main-page-fourth-page" #contact>
         <app-fourth-page *ngIf="ArIsVisible[3]"></app-fourth-page>
     </div> 
 </section>
@@ -21,9 +21,9 @@
     </div>
     <div class="navbar-menu-mobile_titles-container">
 
-        <h1>PROYECTOS</h1>
-        <h1>CONOCIMIENTOS</h1>
-        <h1>CONTACTO</h1>
+        <h1 (click)="goToSec('projects')">PROYECTOS</h1>
+        <h1 (click)="goToSec('tecnologies')">TECNOLOGIAS</h1>
+        <h1 (click)="goToSec('contact')">CONTACTO</h1>
 
     </div>
     <div class="navbar-menu-mobile-icon_container">

@@ -23,6 +23,7 @@ export class ThirdPageComponent implements OnInit {
   
 
   nextPage: string = "CONTACTO";
+  nextSection:string = "contact"
 
   tecnosIF?: Array<TecnologiesIF>
 

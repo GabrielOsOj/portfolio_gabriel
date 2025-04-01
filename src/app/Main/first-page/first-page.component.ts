@@ -9,18 +9,15 @@ import { FooterComponent } from "../../Shared/footer/footer.component";
   templateUrl: './first-page.component.html',
   styleUrl: './first-page.component.css'
 })
-export class FirstPageComponent implements AfterViewInit{
+export class FirstPageComponent{
 
   nextPage:string = "MIS PROYECTOS"
+  nextSection:string = "projects"
 
   isVisible=input<boolean>();
 
-  constructor(private element:ElementRef){
+  constructor(){
     
-  }
-
-  ngAfterViewInit(): void {
-    console.log(this.element.nativeElement.offsetHeight)
   }
 
 }
