@@ -20,4 +20,8 @@
         {{projectData().description}}
     </p>
 
+    <div class="project-card_btn-mas-info" *ngIf="isCenterProject()">
+        <button (click)="openModal()">Detalles</button>
+    </div>
+
 </section>

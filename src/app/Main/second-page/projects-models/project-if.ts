@@ -8,3 +8,8 @@ export interface ProjectIF {
     image?: string
 
 }
+
+export interface ProjectDataLongestIF extends ProjectIF{
+    longDescription:string;
+    images:[]
+}

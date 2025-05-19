@@ -1,0 +1,43 @@
+.projects_modal{
+    width: 80%;
+    height: 90%;
+    
+    margin: auto;
+    
+    background-color: white;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    
+    position: relative;
+}
+
+.projects_modal-images,
+.projects_modal-description{
+
+    width: 45%;
+    height: 100%;
+    border: 1px solid red;
+
+    box-sizing: border-box;
+}
+
+.projects_modal-close_icon{
+
+    width: 2em;
+    height: 2em;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    cursor: pointer;
+
+}
+
+.projects_modal-close_icon > img{
+    width: 95%;
+    height: 95%;
+    object-fit: fill;
+}

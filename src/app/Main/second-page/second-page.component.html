@@ -16,7 +16,7 @@
         </div>
         }@else {
         <div class="second-page_middle_card-container animate__animated animate__fadeInDown animate__slow">
-            <project-card [projectData]="project"></project-card>
+            <project-card [projectData]="project" [isCenterProject]="true"></project-card>
         </div>
         }
         }
@@ -37,5 +37,5 @@
     </div>
 
     <app-footer [nextSection]="nextSection" [animationsActive]="false" class="second-page_footer animate__animated animate__fadeInUp animate__delay-2s" [nextPage]="nextPage"></app-footer>
-
+   
 </section>

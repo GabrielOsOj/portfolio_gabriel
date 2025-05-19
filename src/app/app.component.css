@@ -70,3 +70,19 @@
     color: var(--colors-fonts-color_one);
 
 }
+
+/* Project modal styles */
+.projects-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--colors-transparents-color_one);
+    z-index: 9999;
+
+}
+
+.projects-modal>p{
+    font-size: 1.5em;
+}

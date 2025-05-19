@@ -9,11 +9,13 @@ import { NavbarMenuSvService } from './Core/services/navbar/navbar-menu-sv.servi
 import { IconSvService } from './Core/services/icons/icon-sv.service';
 import { IconIF } from './Core/models/icon-if';
 import { GoToSvService } from './Core/services/goTo/go-to-sv.service';
+import { ProjectsModalComponent } from "./Main/second-page/projects-modal/projects-modal.component";
+import { ProjectsModalService } from './Core/services/projectsModal/projects-modal.service';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [FirstPageComponent, SecondPageComponent, ThirdPageComponent, FourthPageComponent, CommonModule],
+  imports: [FirstPageComponent, SecondPageComponent, ThirdPageComponent, FourthPageComponent, CommonModule, ProjectsModalComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   
@@ -24,6 +26,7 @@ export class AppComponent implements OnInit, AfterViewInit{
   ArIsVisible:Array<boolean> = [true,false,false,false];
 
   isMenuOpen:boolean = false;
+  isProjectModalOpen = false;
   icoArrowUp:string;
 
   @ViewChild('presentation') presentation!:ElementRef;
@@ -40,7 +43,8 @@ export class AppComponent implements OnInit, AfterViewInit{
     private cdr:ChangeDetectorRef,
     private iconSv:IconSvService,
     private navbarSv:NavbarMenuSvService,
-    private goToSv: GoToSvService
+    private goToSv: GoToSvService,
+    private modalSv: ProjectsModalService
   ){
     this.icoArrowUp = iconSv.getUtilityIcon(<IconIF>{name:"up_arrow"});
   }
@@ -52,6 +56,7 @@ export class AppComponent implements OnInit, AfterViewInit{
   ngOnInit(): void {
     this.navbarSv.$menuOpen.subscribe(data => this.isMenuOpen = data);
     this.goToSv.$goToSect.subscribe(data => this.goToSec(data));
+    this.modalSv.$modalOpen.subscribe(data=> this.isProjectModalOpen=data)
   }
 
   public activateComponents(Yoffset:number){

@@ -40,28 +40,6 @@
         { "name": "Swagger" }
       ],
       "image": "assets/images/weather-api.png"
-    },
-    {
-      "title": "Dashboard de Ventas",
-      "description": "Panel interactivo para visualizar datos de ventas con gráficos.",
-      "tecnologies": [
-        { "name": "Java" },
-        { "name": "Spring" },
-        { "name": "MySQL" },
-        { "name": "Docker" }
-      ],
-      "image": "assets/images/sales-dashboard.png"
-    },
-    {
-      "title": "Blog Personal",
-      "description": "Plataforma de blogging con autenticación y editor de texto enriquecido.",
-      "tecnologies": [
-        { "name": "Next.js" },
-        { "name": "TypeScript" },
-        { "name": "Tailwind CSS" },
-        { "name": "Prisma" }
-      ],
-      "image": "assets/images/blog.png"
     }
   ]
   

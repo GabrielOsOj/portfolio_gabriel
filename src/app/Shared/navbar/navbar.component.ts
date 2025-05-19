@@ -41,7 +41,6 @@ export class NavbarComponent implements OnInit{
   }
 
   public fnGoTo(section:string){
-    console.log(section)
     this.goToSv.goToSection(section);
   }
 

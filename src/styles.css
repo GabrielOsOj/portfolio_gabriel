@@ -11,7 +11,6 @@
     --colors-color-four:#3d3f43;
     --colors-color-five:#232428;
     --colors-color-six:#8c8b8e;
-
     --colors-color-seven:#7e4471;
 
     --colors-background-color_one:#939498;
@@ -26,6 +25,7 @@
     --colors-test-color_one:var(--colors-color-three);
     --colors-test-color_two:#363636;
 
+    --colors-transparents-color_one:rgba(0, 0, 0, 0.7);
 }
 
 *{

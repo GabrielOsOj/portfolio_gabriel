@@ -5,11 +5,12 @@ import { ProyectCardComponent } from './project-card/project-card.component';
 import { ProjectSvService } from './projects-service/project-sv.service';
 import { ProjectIF } from './projects-models/project-if';
 import { CommonModule } from '@angular/common';
+import { ProjectsModalComponent } from "./projects-modal/projects-modal.component";
 
 @Component({
   selector: 'app-second-page',
   standalone: true,
-  imports: [NavbarComponent, FooterComponent, ProyectCardComponent,CommonModule],
+  imports: [NavbarComponent, FooterComponent, ProyectCardComponent, CommonModule, ProjectsModalComponent],
   templateUrl: './second-page.component.html',
   styleUrl: './second-page.component.css'
 })
@@ -68,7 +69,5 @@ export class SecondPageComponent{
     }
     this.lastIndexCarrousel--;
   }
-
-
 
 }
