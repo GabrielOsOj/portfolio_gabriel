@@ -3,11 +3,12 @@ import { Component } from '@angular/core';
 import { ProjectsModalService } from '../../../Core/services/projectsModal/projects-modal.service';
 import { IconSvService } from '../../../Core/services/icons/icon-sv.service';
 import { IconIF } from '../../../Core/models/icon-if';
+import { MarkdownComponentComponent } from "../project-markdown/markdown-component/markdown-component.component";
 
 @Component({
   selector: 'app-projects-modal',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, MarkdownComponentComponent],
   templateUrl: './projects-modal.component.html',
   styleUrl: './projects-modal.component.css'
 })
