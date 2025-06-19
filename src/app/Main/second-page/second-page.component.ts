@@ -40,9 +40,7 @@ export class SecondPageComponent{
     let projectList:Array<ProjectIF> = new Array();
   
     for (let i = this.lastIndexCarrousel; i < 3; i++) {
-  
       projectList.push(this.projectsList[i]);
-    
     }
     this.lastIndexCarrousel+=3;
     this.threeProjects = projectList;

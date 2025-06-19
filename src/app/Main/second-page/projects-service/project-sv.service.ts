@@ -16,6 +16,7 @@ export class ProjectSvService {
   public getProjectList():Array<ProjectIF>{
   
     return projectData;
+    
   }
 
 }

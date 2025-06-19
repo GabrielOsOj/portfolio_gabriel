@@ -21,15 +21,15 @@ export class ProyectCardComponent implements OnChanges{
 
   public constructor(private iconSv:IconSvService,
     private modalSv:ProjectsModalService
-  ){
-  }
+  ){}
 
   ngOnChanges(changes: SimpleChanges): void {
     this.iconsUrls = this.iconSv.getTecnoIconList(this.projectData().tecnologies);
   }
 
   public openModal():void{
-    this.modalSv.openModal()
+    this.modalSv.loadProjectData(this.projectData())
+    this.modalSv.openModal();
   }
 
 }

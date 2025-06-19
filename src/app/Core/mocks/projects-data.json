@@ -1,45 +1,63 @@
 [
-    {
-      "title": "Bot de musica",
-      "description": "Bot para reproducir musica en un servidor de discord",
-      "tecnologies": [
-        { "name": "Java" }
-      ],
-      "image": "assets/projectsImgs/proj-img_discord-bot.png"
-    },
-    {
-      "title": "E-commerce",
-      "description": "Tienda en línea con integración de pagos y gestión de productos.",
-      "tecnologies": [
-        { "name": "Spring" },
-        { "name": "Java" },
-        { "name": "MySQL" },
-        { "name": "MySQL" },
-        { "name": "Angular" }
-      ],
-      "image": "assets/images/ecommerce.png"
-    },
-    {
-      "title": "Chat en Tiempo Real",
-      "description": "Aplicación de chat con WebSockets y autenticación de usuarios.",
-      "tecnologies": [
-        { "name": "Node.js" },
-        { "name": "Express" },
-        { "name": "Socket.io" },
-        { "name": "MongoDB" }
-      ],
-      "image": "assets/images/chat-app.png"
-    },
-    {
-      "title": "API de Clima",
-      "description": "Servicio REST para obtener información meteorológica en tiempo real.",
-      "tecnologies": [
-        { "name": "Spring Boot" },
-        { "name": "Java" },
-        { "name": "PostgreSQL" },
-        { "name": "Swagger" }
-      ],
-      "image": "assets/images/weather-api.png"
-    }
-  ]
-  
+  {
+    "title": "Bot de musica",
+    "description": "Bot para reproducir musica en un servidor de discord",
+    "tecnologies": [
+      {
+        "name": "Java"
+      }
+    ],
+    "image": "assets/projects/discordBot/images/proj-img_discord-bot.png",
+    "detailsUrl": "assets/projects/discordBot/discordBot.json"
+  },
+  {
+    "title": "Bazar app",
+    "description": "Crud para tienda de bazar",
+    "tecnologies": [
+      {
+        "name": "Java"
+      },
+      {
+        "name": "Spring"
+      },
+      {
+        "name": "MySQL"
+      },
+      {
+        "name": "Html"
+      },
+      {
+        "name": "Css"
+      },
+      {
+        "name": "Javascript"
+      },
+      {
+        "name": "Docker"
+      }
+    ],
+    "image": "assets/images/ecommerce.png",
+    "detailsUrl": "assets/projects/bazarApp/bazarApp.json"
+  },
+  {
+    "title": "Chat en Tiempo Real",
+    "description": "Aplicación de chat con WebSockets y autenticación de usuarios.",
+    "tecnologies": [
+      {
+        "name": "Node.js"
+      },
+      {
+        "name": "Express"
+      },
+      {
+        "name": "Socket.io"
+      },
+      {
+        "name": "MongoDB"
+      }
+    ],
+    "image": "assets/images/chat-app.png",
+    "detailsUrl": "assets/projects/bazarApp/bazarApp.json"
+   
+  }
+]

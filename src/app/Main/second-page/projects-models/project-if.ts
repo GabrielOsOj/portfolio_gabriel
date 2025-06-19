@@ -5,11 +5,7 @@ export interface ProjectIF {
     title:string,
     description:string,
     tecnologies:Array<IconIF>,
-    image?: string
+    image?: string,
+    detailsUrl: string
 
-}
-
-export interface ProjectDataLongestIF extends ProjectIF{
-    longDescription:string;
-    images:[]
 }
