@@ -8,7 +8,7 @@
       }
     ],
     "image": "assets/projects/discordBot/images/proj-img_discord-bot.png",
-    "detailsUrl": "assets/projects/discordBot/discordBot.json"
+    "detailsUrl": "/assets/projects/discordBot/discordBot.json"
   },
   {
     "title": "Bazar app",
@@ -37,7 +37,7 @@
       }
     ],
     "image": "assets/images/ecommerce.png",
-    "detailsUrl": "assets/projects/bazarApp/bazarApp.json"
+    "detailsUrl": "/assets/projects/bazarApp/bazarApp.json"
   },
   {
     "title": "Chat en Tiempo Real",
@@ -57,7 +57,7 @@
       }
     ],
     "image": "assets/images/chat-app.png",
-    "detailsUrl": "assets/projects/bazarApp/bazarApp.json"
+    "detailsUrl": "/assets/projects/bazarApp/bazarApp.jsonssss"
    
   }
 ]

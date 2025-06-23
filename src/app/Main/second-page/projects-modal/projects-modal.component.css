@@ -19,167 +19,8 @@
     position: relative;
 }
 
-.projets_modal-details-description {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-/*subSections*/
-.projects_modal-images,
-.projects_modal-details {
-
-    width: 95%;
-    /* border: 1px solid red; */
-    box-sizing: border-box;
-
-}
-
-/*Images carrousel*/
-.projects_modal-images {
-    height: 65vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid red; */
-}
-
-.projects_modal-images-carrousel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-.projects_modal-images-carrousel-imagen {
-    z-index: 0;
-}
-
-.projects_modal-images-carrousel-btn_right,
-.projects_modal-images-carrousel-btn_left {
-
-    width: 10%;
-    height: 100%;
-    position: absolute;
-    background-color: transparent;
-    border: none;
-    z-index: 200;
-}
-
-.projects_modal-images-carrousel-btn_right {
-    right: 0;
-}
-
-.projects_modal-images-carrousel-btn_left {
-    left: 0;
-
-}
-
-.btn-carrousel:hover {
-
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-/*Technologies box*/
-.projets_modal-details-technologies {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.projects_modal-details-technologies-technologies {
-    /* border: 1px solid green; */
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.techBox {
-    width: 25em;
-    margin: 1rem;
-    border: 2px solid var(--colors-color-seven);
 
 
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 1.5rem;
-
-    background: var(--colors-color-one);
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
-
-    color: var(--colors-fonts-color_one);
-}
-
-.techBox:hover {
-    background: var(--colors-color-six);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.techBox-img {
-    flex-shrink: 0;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #f8f9fa;
-    border-radius: 8px;
-    padding: 8px;
-}
-
-.techBox-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.techBox-title_and_desc-title {
-    font-size: 1.2rem;
-    font-weight: 600;
-    /* color: #2d3436; */
-    margin-bottom: 0.5rem;
-}
-
-.techBox-title_and_desc-desc {
-    font-size: 0.9rem;
-    /* color: #636e72; */
-    line-height: 1.4;
-}
-
-
-/*Close icon*/
-/* .projects_modal-close_icon {
-
-    width: 2em;
-    height: 2em;
-
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    cursor: pointer;
-
-}
-
-.projects_modal-close_icon>img {
-    width: 95%;
-    height: 95%;
-    object-fit: fill;
-} */
-
-/* testeando deepseek */
 .project-modal {
 
     max-width: 800px;
@@ -251,7 +92,6 @@
 }
 
 .nav-btn {
-    /* background: rgba(255, 255, 255, 0.7); */
     background: var(--colors-color-six);
     border: none;
     font-size: 24px;
@@ -278,7 +118,6 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    /* background: rgba(255, 255, 255, 0.5); */
     background: var(--colors-color-six);
     cursor: pointer;
 }

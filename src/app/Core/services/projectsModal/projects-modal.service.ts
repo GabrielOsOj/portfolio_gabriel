@@ -10,7 +10,22 @@ import { ProjectDetailsIF } from '../../../Main/second-page/projects-models/proj
 export class ProjectsModalService {
 
   private isModalOpen = new BehaviorSubject<boolean>(false);
-  private project = new BehaviorSubject<ProjectDetailsIF>({} as ProjectDetailsIF);
+  private project = new BehaviorSubject<ProjectDetailsIF>(
+    {
+        title: '',
+        description: '',
+        images: [],
+        technologies: {
+          frontend: [""],
+          backend: [""],
+          utils: [""],
+          otherTechs: [""]
+        },
+        deployed: false,
+        github: '',
+        live: ''
+      }
+  );
 
   public $modalOpen = this.isModalOpen.asObservable();
   public $projectData = this.project.asObservable();
@@ -29,7 +44,6 @@ export class ProjectsModalService {
     this.http.get(projectData.detailsUrl).subscribe((resp)=>{
       this.project.next(resp as ProjectDetailsIF);
     })
- 
   }
 
 }

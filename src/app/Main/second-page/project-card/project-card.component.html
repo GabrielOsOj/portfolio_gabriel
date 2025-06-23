@@ -8,11 +8,8 @@
     <div class="project-card_tecnologiesContainer">
         @for (icon of iconsUrls; track $index) {
         <div class="project-card_tecnologiesContainer_iconContainer">
-
             <img [src]="icon" alt="" appImgBrokenDir>
-
         </div>
-
         }
     </div>
 
@@ -23,5 +20,4 @@
     <div class="project-card_btn-mas-info" *ngIf="isCenterProject()">
         <button (click)="openModal()">Detalles</button>
     </div>
-
 </section>

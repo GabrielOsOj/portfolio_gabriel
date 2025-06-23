@@ -5,37 +5,40 @@
     <div class="background-style_light animate__animated animate__fadeIn animate__slower animate__delay-3s"></div>
 
     <div class="second-page_middle_three-card">
-        @for (project of threeProjects; track $index) {
-        @if ($index == 0) {
-        <div class="second-page_middle_card-container animate__animated animate__fadeInUp animate__slow" (click)="prevProject()">
-            <project-card [projectData]="project"></project-card>
-        </div>
-        }@else if ($index == 2){
-        <div class="second-page_middle_card-container animate__animated animate__fadeInUp animate__slow" (click)="nextProject()">
-            <project-card [projectData]="project"></project-card>
-        </div>
-        }@else {
-        <div class="second-page_middle_card-container animate__animated animate__fadeInDown animate__slow">
-            <project-card [projectData]="project" [isCenterProject]="true"></project-card>
-        </div>
-        }
-        }
-    </div>
 
-    <div class="second-page_middle_one-card animate__animated animate__fadeInDown animate__slow">
+        <div class="carousel">
 
-        <div class="second-page_middle_one-card_cards-container">
-
-            @for (project of projectsList; track $index) {
-
-            <div class="second-page_middle_one-card_card-container">
-                <project-card [projectData]="project"></project-card>
+            <div (click)="openProject(0)" #cardContainer class="carousel-item animate__animated animate__fadeIn">
+                <project-card [projectData]="projectsList[0]"></project-card>
             </div>
-            }
+            <div (click)="openProject(1)" #cardContainer class="carousel-item animate__animated animate__fadeIn animate__delay-1s">
+                <project-card [projectData]="projectsList[1]"></project-card>
+            </div>
+            <div (click)="openProject(2)" #cardContainer class="carousel-item animate__animated animate__fadeIn animate__delay-1s">
+                <project-card [projectData]="projectsList[2]"></project-card>
+            </div>
+        </div>
+
+        <div class="navigation-buttons">
+            <button class="nav-btn prev-btn animate__animated animate__delay-2s animate__fadeInLeft" (click)="nextProject()">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <button class="nav-btn next-btn animate__animated animate__delay-2s animate__fadeInRight" (click)="previousProject()">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
         </div>
 
     </div>
 
-    <app-footer [nextSection]="nextSection" [animationsActive]="false" class="second-page_footer animate__animated animate__fadeInUp animate__delay-2s" [nextPage]="nextPage"></app-footer>
-   
+    <app-footer [nextSection]="nextSection" [animationsActive]="false"
+        class="second-page_footer animate__animated animate__fadeInUp animate__delay-2s"
+        [nextPage]="nextPage"></app-footer>
+
 </section>

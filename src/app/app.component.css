@@ -80,7 +80,11 @@
     height: 100vh;
     background-color: var(--colors-transparents-color_one);
     z-index: 9999;
+    display: none;
+}
 
+.visible{
+    display: block;
 }
 
 .projects-modal>p{

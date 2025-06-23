@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, HostListener, input } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, input, QueryList, ViewChild, ViewChildren } from '@angular/core';
 import { NavbarComponent } from "../../Shared/navbar/navbar.component";
 import { FooterComponent } from "../../Shared/footer/footer.component";
 import { ProyectCardComponent } from './project-card/project-card.component';
@@ -6,66 +6,75 @@ import { ProjectSvService } from './projects-service/project-sv.service';
 import { ProjectIF } from './projects-models/project-if';
 import { CommonModule } from '@angular/common';
 import { ProjectsModalComponent } from "./projects-modal/projects-modal.component";
+import { ProjectsModalService } from '../../Core/services/projectsModal/projects-modal.service';
 
 @Component({
   selector: 'app-second-page',
   standalone: true,
-  imports: [NavbarComponent, FooterComponent, ProyectCardComponent, CommonModule, ProjectsModalComponent],
+  imports: [NavbarComponent, FooterComponent, ProyectCardComponent, CommonModule],
   templateUrl: './second-page.component.html',
   styleUrl: './second-page.component.css'
 })
-export class SecondPageComponent{
+export class SecondPageComponent implements AfterViewInit {
 
-  isVisible=input<boolean>();
-  
-  nextPage:string = "HABILIDADES";
-  nextSection:string = "tecnologies"
+  @ViewChildren('cardContainer') carruselItems!:QueryList<ElementRef<HTMLDivElement>>
+  activeIndex: number = 0;
 
-  lastIndexCarrousel:number = 0;
+  isVisible = input<boolean>();
 
-  isLargeWidth:boolean;
+  nextPage: string = "HABILIDADES";
+  nextSection: string = "tecnologies"
 
-  projectsList:Array<ProjectIF>; 
-  threeProjects:Array<ProjectIF> = new Array();
+  projectsList: Array<ProjectIF>;
 
-  constructor(private projectSv:ProjectSvService,
-  ){
+  constructor(private projectSv: ProjectSvService,
+    private modalSv: ProjectsModalService
+  ) {
     this.projectsList = this.projectSv.getProjectList();
-    this.getThreeElements();
-    this.isLargeWidth = false;
   }
 
-  public getThreeElements():void{
-
-    let projectList:Array<ProjectIF> = new Array();
-  
-    for (let i = this.lastIndexCarrousel; i < 3; i++) {
-      projectList.push(this.projectsList[i]);
-    }
-    this.lastIndexCarrousel+=3;
-    this.threeProjects = projectList;
+  public openProject(id: number): void {
+    this.modalSv.loadProjectData(this.projectsList[id]);
+    this.modalSv.openModal()
   }
 
-  public nextProject(){
-    this.threeProjects.push(this.projectsList[this.lastIndexCarrousel]);
-    this.threeProjects.shift()
+  public nextProject(): void {
+    this.activeIndex = (this.activeIndex > 0) ?
+      this.activeIndex - 1 :
+      this.projectsList.length - 1;
 
-    if(this.lastIndexCarrousel == this.projectsList.length-1){
-      this.lastIndexCarrousel = 0;
-      return;
-    }
-    this.lastIndexCarrousel++;
+    this.updateCarouselClasses()
   }
 
-  public prevProject(){
-    this.threeProjects.unshift(this.projectsList[this.lastIndexCarrousel]);
-    this.threeProjects.pop();
-
-    if(this.lastIndexCarrousel == 0){
-      this.lastIndexCarrousel = this.projectsList.length-1;
-      return;
-    }
-    this.lastIndexCarrousel--;
+  public previousProject(): void {
+    this.activeIndex = (this.activeIndex < this.projectsList.length - 1) ?
+      this.activeIndex + 1 :
+      0;
+    this.updateCarouselClasses()
   }
 
+  public setActiveIndex(index: number) {
+    this.activeIndex = index;
+  }
+
+  ngAfterViewInit(): void {
+    this.updateCarouselClasses()
+  }
+
+  private updateCarouselClasses() {
+    console.log("activo!")
+    const cards = this.carruselItems.toArray();
+
+    cards.forEach((card, index) => {
+      const nativeElement = card.nativeElement;
+
+      nativeElement.classList.remove('left', 'center', 'right');
+
+      const position =
+        index === this.activeIndex ? 'center' :
+          index === (this.activeIndex + 1) % cards.length ? 'right' : 'left';
+
+      nativeElement.classList.add(position);
+    });
+  }
 }

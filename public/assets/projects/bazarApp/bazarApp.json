@@ -1,14 +1,13 @@
 {
-  "title":"Mi Proyecto",
-  "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, recusandae? Minima voluptates veritatis aut necessitatibus nesciunt at corporis, animi perferendis.",
+  "title":"Bazar",
+  "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, recusandae? Minima voluptates veritatis aut necessitatibus nesciunt at corporis, animi perferendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, recusandae? Minima voluptates veritatis aut necessitatibus nesciunt at corporis, animi perferendis.",
   "images": [
-    "assets/projects/bazarApp/images/stockImg.png",
-    "assets/projects/bazarApp/images/eee.png"
+    "assets/projects/bazarApp/images/stockImg.png"
   ],
   "technologies": {
     "frontend": ["Angular", "TypeScript", "RxJS"],
     "backend": ["Node.js", "Express", "MongoDB"],
-    "otherTechs":["DiscordJPA"],
+    "otherTechs":[],
     "utils": ["Docker", "Jest", "GitHub Actions"]
   },
   "deployed":false,
