@@ -5,9 +5,9 @@
     </div>
 
     <div class="tecnologies_icons">
-        @for (icon of tecnDto().icons; track $index) {
+        @for (icon of tecnDto().icons; track $index; let idx = $index) {
         <div class="tecnologies_icons_icon-container">
-            <img [src]="icon">
+            <img [src]="icon" [title]="tecnDto().iconsName[idx]">
         </div>
         }
     </div>

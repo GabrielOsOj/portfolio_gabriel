@@ -27,6 +27,8 @@
     bottom: -1.6em;
 
     background-color: var(--colors-color-one);
+    transition: all 0.3s ease-in-out;
+
 }
 
 .text-box_text-container {
@@ -48,6 +50,12 @@
 
     /* border: 1px solid red; */
 }
+
+.text-box:hover .text-box_title-container_title{
+    transform:translateY(-50%) scale(1.1);
+    background-color: transparent;
+}
+
 
 .right {
     left: auto;

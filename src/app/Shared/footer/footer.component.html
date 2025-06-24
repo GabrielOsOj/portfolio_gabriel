@@ -1,7 +1,7 @@
 <section class="footer">
 
     <div [ngClass]="{'footer-social':true, 'lastPage':isLastPage()}">
-        <div
+        <!-- <div
             [ngClass]="{'footer-social_icon':true,  'animate__animated animate__bounceInLeft animate__delay-3s':animationsActive()}">
             <img src="/assets/svg/linkedin.svg" alt="linkedin.ico">
         </div>
@@ -11,6 +11,19 @@
         </div>
         <div
             [ngClass]="{'footer-social_icon':true, 'animate__animated animate__bounceInRight animate__delay-3s':animationsActive()}">
+            <img src="/assets/svg/docker.svg" alt="docker.ico">
+        </div> -->
+
+        <div
+            class="footer-social_icon animate__animated animate__bounceInLeft animate__delay-2s animate__slow">
+            <img src="/assets/svg/linkedin.svg" alt="linkedin.ico">
+        </div>
+        <div
+           class="footer-social_icon animate__animated animate__bounceInDown animate__delay-2s animate__slow">
+            <img src="/assets/svg/github.svg" alt="github.ico">
+        </div>
+        <div
+            class="footer-social_icon animate__animated animate__bounceInRight animate__delay-2s animate__slow">
             <img src="/assets/svg/docker.svg" alt="docker.ico">
         </div>
     </div>

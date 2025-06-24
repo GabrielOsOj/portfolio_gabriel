@@ -4,6 +4,7 @@ export interface TecnologiesDTO {
 
     title:string,
     icons:Array<string>,
+    iconsName: Array<string>,
     titlePosition: Positions
 
 }

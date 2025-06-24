@@ -47,6 +47,7 @@ export class ThirdPageComponent implements OnInit {
       this.tecnosDTO.push(<TecnologiesDTO>{
         title: tec.title,
         icons: tec.icons.map(icon => this.iconSv.getTecnoIcon(icon)),
+        iconsName: tec.icons.map(icon => icon.name),
         titlePosition: Object.values(Positions)[positionIndex]
       })
 

@@ -156,7 +156,6 @@
   box-shadow: 0 2px 10px rgba(37, 117, 252, 0.3);
 }
 
-
 /* footer */
 .second-page_footer {
     grid-area: footer;
@@ -203,7 +202,6 @@
 
 }
 
-
 @media (width<431px) and (width>400px) {
     .second-page {
 
@@ -225,7 +223,6 @@
     }
 
 }
-
 
 @media (width<400px) {
     .second-page {
