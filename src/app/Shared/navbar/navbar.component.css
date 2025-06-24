@@ -51,8 +51,8 @@
     height: 50%;
 }
 .navbar-icon_icon-container:hover{
-    animation-name: heartBeat;
-    animation-duration: 0.5s;
+    animation-name: shakeX;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
 }
 

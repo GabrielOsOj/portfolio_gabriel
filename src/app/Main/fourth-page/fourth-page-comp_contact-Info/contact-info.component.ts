@@ -26,7 +26,6 @@ export class ContactInfoComponent {
     this.ubicationIcon=iconSv.getUtilityIcon(<IconIF>{'name':'ubication'})
     this.emailIcon=iconSv.getUtilityIcon(<IconIF>{'name':'email'})
 
-
   }
 
 }

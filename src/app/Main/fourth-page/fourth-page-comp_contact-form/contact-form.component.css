@@ -106,11 +106,13 @@ textarea {
 
 
     color: var(--colors-fonts-color_one);
-
+    transition: all 0.3s ease-in-out;
+    cursor:not-allowed;
 }
 
 .button-active {
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 

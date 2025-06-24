@@ -41,8 +41,8 @@
     transform: translate(-50%);
     bottom: -40%;
 
-
     /* border: 1px solid green; */
+    transition: all 0.3s ease-in-out;
 }
 
 .contact-info_text_text {
@@ -56,6 +56,18 @@
     
     margin: 0;
     padding: 10% 0;
+
+    transition: all 0.3s ease-in-out;
+
+}
+
+.contact-info_text:hover .contact-info_text_title-container_title{
+    transform: translateX(-50%) translateY(-40%) scale(1.1);
+    background-color: transparent;
+}
+
+.contact-info_text:hover .contact-info_text_text{
+    color: var(--colors-fonts-color_three)
 }
 
 /* contact icons style*/

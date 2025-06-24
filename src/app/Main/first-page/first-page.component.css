@@ -82,7 +82,7 @@
 
     height: 50%;
     /* width: calc(100%-2em); */
-    width: 50%;
+    /* width: 50%; */
 
     display: flex;
     flex-direction: column;
@@ -90,10 +90,12 @@
     align-items: center;
 
     /* border: 1px solid red; */
+
 }
 
 .first-page_center-name>h1,
 h5 {
+
     margin: 0;
 }
 
@@ -105,7 +107,6 @@ h5 {
 }
 
 .first-page_center-name_title {
-
     font-size: 9em;
 
 }
@@ -115,7 +116,10 @@ h5 {
     font-size: .9em;
     margin-top: -2em;
 }
-
+/* se que no se usan los important, pero era la unica forma en la que andaba */
+.first-page_center-name:hover .first-page_center-name_title{
+    transform: scale(1.4);
+}
 
 /*footer*/
 .first-page_footer {
@@ -183,3 +187,4 @@ h5 {
         font-size: .7em;
     }
 }
+

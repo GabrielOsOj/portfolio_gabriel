@@ -31,7 +31,21 @@
     object-fit: contain;
 
     /* border: 1px solid red; */
+    transition: all 0.3s ease-in-out;
+    filter: grayscale(.5);
+
 }
+
+.icon_img-container:hover .icon_img-container_img{
+    transform: scale(1.1);
+    filter: grayscale(0);
+
+}
+
+.icon_img-container:active .icon_img-container_img{
+    transform: scale(0.9);
+}
+
 
 /*text styles*/
 
