@@ -3,6 +3,7 @@ import { IconIF } from "../../../Core/models/icon-if";
 export interface ProjectDetailsIF{
     title:String,
     description:String,
+    utility:String,
     images: Array<String>,
     technologies: {
         frontend: Array<String>,

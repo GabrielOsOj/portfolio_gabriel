@@ -1,15 +1,11 @@
 <section class="navbar">
 
-    <!-- <div class="navbar-icon animate__animated animate__fadeIn animate__delay-3s animate__slow">
-         -->
     <div
         [ngClass]="{'navbar-icon':true, 'animate__animated animate__fadeIn animate__delay-3s animate__slow':animationsActive()}">
-        <div class="navbar-icon_icon-container">
+        <div class="navbar-icon_icon-container" (click)="fnGoTo('presentation')">
             <img [src]="mainIco" alt="gabriel ojeda developer" srcset="">
         </div>
     </div>
-
-    <!-- <div class="navbar-buttons animate__animated animate__slideInRight  animate__delay-2s"> -->
 
     <div
         [ngClass]="{'navbar-buttons':true, 'animate__animated animate__slideInRight animate__delay-2s':animationsActive()}">
@@ -26,30 +22,11 @@
 
     </div>
 
-
     <div [ngClass]="{'navbar-buttons-mobile':true,'animate__animated animate__slideInRight  animate__delay-2s':animationsActive()}"
         (click)="fnOpenMenu()">
 
         <img class="navbar-buttons-mobile-icon" [src]="menuIcon" alt="" srcset="">
 
     </div>
-
-    <!-- <div class="navbar-menu-mobile" *ngIf="menuOpen">
-
-        <div class="navbar-menu-mobile-icon_container" (click)="fnExitMenu()">
-            <img class="navbar-buttons-mobile-icon" [src]="upArrowIcon" alt="">
-        </div>
-        <div class="navbar-menu-mobile_titles-container">
-
-            <h1>PROYECTOS</h1>
-            <h1>CONOCIMIENTOS</h1>
-            <h1>CONTACTO</h1>
-
-        </div>
-        <div class="navbar-menu-mobile-icon_container">
-
-        </div>
-    </div> -->
-
 
 </section>

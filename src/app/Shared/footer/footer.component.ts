@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, input } from '@angular/core';
 import { GoToSvService } from '../../Core/services/goTo/go-to-sv.service';
+import { LinkSvService } from '../../Core/services/linkService/link-sv.service';
 
 @Component({
   selector: 'app-footer',
@@ -17,7 +18,14 @@ export class FooterComponent {
   animationsActive = input<boolean>(true);
 
   isLastPage = input<boolean>(false);
-  constructor(private goToSv:GoToSvService){
+  constructor(private goToSv:GoToSvService,
+    private linksSv:LinkSvService
+  ){
+
+  }
+
+  public getLinks(){
+    return this.linksSv.fnGetLinks();
   }
 
   public goToSec(){

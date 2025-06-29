@@ -1,14 +1,19 @@
 {
   "title":"Bazar",
-  "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, recusandae? Minima voluptates veritatis aut necessitatibus nesciunt at corporis, animi perferendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, recusandae? Minima voluptates veritatis aut necessitatibus nesciunt at corporis, animi perferendis.",
+  "description": "Bazar App es una aplicación web fullstack pensada para la gestión de ventas, clientes y productos de un comercio. Desarrollada como parte de mi portafolio, integra un backend robusto en Java con Spring Boot y un frontend liviano para pruebas interactivas.",
+  "utility":"Desarrollé este proyecto para afianzar mis conocimientos en Java y Spring Boot, practicar testing con JUnit y Mockito, y aprender integración con Docker y bases de datos. Simula un sistema de ventas con validaciones reales, filtros útiles y una estructura pensada para escalar.",
   "images": [
-    "assets/projects/bazarApp/images/stockImg.png"
+    "assets/projects/bazarApp/images/bazar_img_1.png",
+    "assets/projects/bazarApp/images/bazar_img_2.png",
+    "assets/projects/bazarApp/images/bazar_img_3.png",
+    "assets/projects/bazarApp/images/bazar_img_4.png",
+    "assets/projects/bazarApp/images/bazar_img_5.png"
   ],
   "technologies": {
-    "frontend": ["Angular", "TypeScript", "RxJS"],
-    "backend": ["Node.js", "Express", "MongoDB"],
+    "frontend": ["HTML", "CSS", "Javascript"],
+    "backend": ["Java", "Spring", "MySQL"],
     "otherTechs":[],
-    "utils": ["Docker", "Jest", "GitHub Actions"]
+    "utils": ["Docker","Junit5","Mockito","H2"]
   },
   "deployed":false,
   "github": "url",

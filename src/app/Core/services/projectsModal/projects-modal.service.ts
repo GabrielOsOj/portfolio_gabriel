@@ -14,6 +14,7 @@ export class ProjectsModalService {
     {
         title: '',
         description: '',
+        utility:'',
         images: [],
         technologies: {
           frontend: [""],

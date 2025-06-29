@@ -12,17 +12,8 @@
   },
   {
     "title": "Bazar app",
-    "description": "Crud para tienda de bazar",
+    "description": "Aplicación web fullstack para gestionar ventas, clientes y productos.",
     "tecnologies": [
-      {
-        "name": "Java"
-      },
-      {
-        "name": "Spring"
-      },
-      {
-        "name": "MySQL"
-      },
       {
         "name": "Html"
       },
@@ -33,10 +24,16 @@
         "name": "Javascript"
       },
       {
-        "name": "Docker"
+        "name": "Java"
+      },
+      {
+        "name": "Spring"
+      },
+      {
+        "name": "MySQL"
       }
     ],
-    "image": "assets/images/ecommerce.png",
+    "image": "/assets/projects/bazarApp/images/bazar_img_0.png",
     "detailsUrl": "/assets/projects/bazarApp/bazarApp.json"
   },
   {
@@ -58,6 +55,5 @@
     ],
     "image": "assets/images/chat-app.png",
     "detailsUrl": "/assets/projects/bazarApp/bazarApp.jsonssss"
-   
   }
 ]
