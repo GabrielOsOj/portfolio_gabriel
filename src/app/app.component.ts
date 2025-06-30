@@ -61,15 +61,16 @@ export class AppComponent implements OnInit, AfterViewInit{
 
   public activateComponents(Yoffset:number){
     this.ArIsVisible[0] = true;
-    if(Yoffset>650){
+
+    if(Yoffset>600){
       this.ArIsVisible[1] = true;
       this.cdr.detectChanges()
     }
-    if(Yoffset>1300){
+    if(Yoffset>1200){
       this.ArIsVisible[2] = true;
       this.cdr.detectChanges()
     }
-    if(Yoffset>1900){
+    if(Yoffset>1800){
       this.ArIsVisible[3] = true;
       this.cdr.detectChanges()
     }
