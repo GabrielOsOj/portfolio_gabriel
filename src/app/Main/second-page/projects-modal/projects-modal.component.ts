@@ -19,29 +19,24 @@ export class ProjectsModalComponent {
   menuIcon: string;
 
   modalData: ProjectDetailsIF = {} as ProjectDetailsIF;
-  
+
   activeIndex = 0;
-  hasOtherTechs = false;
 
   public constructor(private iconSv: IconSvService,
     private modalSv: ProjectsModalService) {
     this.menuIcon = iconSv.getUtilityIcon(<IconIF>{ name: "cross" });
 
-    this.modalSv.$modalOpen.subscribe((m) => {
-      this.isModalOpen = m;
-    })
-
     this.modalSv.$projectData.subscribe((d) => {
       this.modalData = d;
-      if (d.technologies.otherTechs.length != 0) {
-        this.hasOtherTechs = true;
-      }
+    })
+
+    this.modalSv.$modalOpen.subscribe((m) => {
+      this.isModalOpen = m;
     })
 
   }
 
   public closeModal(): void {
-    this.hasOtherTechs = false;
     this.modalSv.closeModal();
   }
 

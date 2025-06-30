@@ -17,10 +17,10 @@ export class ProjectsModalService {
         utility:'',
         images: [],
         technologies: {
-          frontend: [""],
-          backend: [""],
-          utils: [""],
-          otherTechs: [""]
+          frontend: [],
+          backend: [],
+          utils: [],
+          otherTechs: []
         },
         deployed: false,
         github: '',
@@ -43,6 +43,7 @@ export class ProjectsModalService {
 
   public loadProjectData(projectData:ProjectIF){
     this.http.get(projectData.detailsUrl).subscribe((resp)=>{
+      console.log(resp)
       this.project.next(resp as ProjectDetailsIF);
     })
   }

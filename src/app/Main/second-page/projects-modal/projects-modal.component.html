@@ -29,7 +29,7 @@
 
     <h4 class="project-subtitle">Tecnologias</h4>
 
-    <div class="tech-categories" *ngIf="!hasOtherTechs">
+    <div class="tech-categories" *ngIf="this.modalData.technologies.otherTechs.length==0">
         <div class="category">
             <h3>Frontend</h3>
             <div class="tech-items">
@@ -58,7 +58,7 @@
         </div>
     </div>
 
-    <div class="tech-categories-free" *ngIf="hasOtherTechs">
+    <div class="tech-categories-free" *ngIf="this.modalData.technologies.otherTechs.length>0">
 
         <div class="category-free">
             <h3>Desarrollo</h3>

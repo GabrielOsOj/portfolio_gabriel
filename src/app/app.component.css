@@ -90,3 +90,8 @@
 .projects-modal>p{
     font-size: 1.5em;
 }
+
+.modal-open{
+    height: 500%;
+    overflow:hidden;
+}
