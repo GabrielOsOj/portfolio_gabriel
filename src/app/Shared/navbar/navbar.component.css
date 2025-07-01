@@ -135,6 +135,7 @@
     .navbar-buttons{
         visibility: hidden;
         animation: none;
+        
     }
     
     .navbar-buttons>div{

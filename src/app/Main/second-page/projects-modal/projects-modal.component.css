@@ -150,6 +150,13 @@
     border-radius: 8px;
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+
+    background: var(--colors-color-five);
+    border-radius: 8px;
+    border: 1px solid var(--colors-color-eight);
+
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 .category>h3,
@@ -199,7 +206,7 @@
     margin-top: 10px;
 }
 
-.tech-item-free {
+.tech-item-free, .tech-item {
     background: var(--colors-color-one);
     border: 1px dashed var(--colors-color-eight);
     color: var(--colors-fonts-color_one);
