@@ -161,3 +161,25 @@ p{
     }
 
 }
+
+@media (width<300px) {
+
+    h2{
+        font-size: 1em;
+    }
+
+    p{
+        width: 100%;
+        font-size: .6em;
+    }
+
+    .project-card_tecnologiesContainer{
+        gap: .4em;
+    }
+    
+    .project-card_tecnologiesContainer_iconContainer{
+        width: 2em;
+        height: 2em;
+    }
+
+}

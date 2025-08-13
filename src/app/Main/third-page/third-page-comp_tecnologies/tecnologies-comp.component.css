@@ -190,3 +190,28 @@ h1 {
     }
 
 }
+
+@media (width<300px) {
+
+    .tecnologies_icons {
+
+
+    border: 2px solid var(--colors-test-color_one);
+
+}
+    
+    h1{
+        bottom: -.1em;
+        font-size: .8em;
+    }
+
+    .tecnologies_icons{
+        height: 60%;
+    }
+
+    .tecnologies_icons_icon-container{
+        width: 15px;
+        height: 15px;
+    }
+
+}
