@@ -3,8 +3,9 @@
   "description": "Bot de Discord desarrollado en Java con funciones de reproducción de música desde YouTube. El proyecto busca integrar buenas prácticas de arquitectura, aplicar mejoras de código y adaptarlo para correr en entornos aislados mediante Docker.",
   "utility":"Este proyecto nació como un experimento personal y terminó siendo una herramienta clave para afianzar conceptos como programación concurrente, estructura por capas y contenedorización. A través del proceso de refactorización y dockerización, apunté a llevar el proyecto a un nivel más profesional, entendiendo cómo hacer que una app pueda escalar y mantenerse fácilmente.",
   "images": [
-    "assets/projects/bazarApp/images/stockImg.png",
-    "assets/projects/bazarApp/images/eee.png"
+    "assets/projects/discordBot/images/project-discord-img1.png",
+    "assets/projects/discordBot/images/project-discord-img2.png",
+    "assets/projects/discordBot/images/project-discord-img3.png"
   ],
   "technologies": {
     "frontend": [],

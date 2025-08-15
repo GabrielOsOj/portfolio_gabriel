@@ -37,23 +37,23 @@
     "detailsUrl": "/assets/projects/bazarApp/bazarApp.json"
   },
   {
-    "title": "Chat en Tiempo Real",
-    "description": "Aplicación de chat con WebSockets y autenticación de usuarios.",
+    "title": "Acortador de URLs",
+    "description": "Aplicación web que permite acortar enlaces largos, redirigirlos de forma automática y obtener métricas de uso.",
     "tecnologies": [
       {
-        "name": "Node.js"
+        "name": "Java"
       },
       {
-        "name": "Express"
+        "name": "Spring"
       },
       {
-        "name": "Socket.io"
+        "name": "MySQL"
       },
       {
-        "name": "MongoDB"
+        "name": "Docker"
       }
     ],
-    "image": "assets/images/chat-app.png",
-    "detailsUrl": "/assets/projects/bazarApp/bazarApp.jsonssss"
+    "image": "/assets/projects/acortadorURL/images/proj-acortador-img0.png",
+    "detailsUrl": "/assets/projects/acortadorURL/acortador.json"
   }
 ]

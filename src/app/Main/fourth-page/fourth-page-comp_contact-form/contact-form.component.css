@@ -5,8 +5,6 @@
     margin: auto;
 
     /* background-color: var(--colors-color-five); */
-
-
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -177,6 +175,42 @@ textarea {
 
     .input-box>textarea {
         height: 6em;
+    }
+
+    .contact-form_button-container{
+        width: 60%;
+        height: 10%;
+    }
+
+}
+
+@media (width<300px)  {
+
+    .contact-form{
+        margin-top: 15%;
+        width: 80%;
+        height: 65%;
+    }
+
+    .contact-form_title-container {
+        font-size: 1.2em;
+        height: 5%;
+    }
+
+    .contact-form_message-box_title,
+    .contact-form_email-box_title,
+    .contact-form_name-box_title {
+        font-size: .8em;
+    }
+
+    .input-box>input,
+    textarea {
+
+        height: 1.5em;
+    }
+
+    .input-box>textarea {
+        height: 4em;
     }
 
     .contact-form_button-container{

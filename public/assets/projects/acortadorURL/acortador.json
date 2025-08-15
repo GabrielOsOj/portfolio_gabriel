@@ -1,0 +1,33 @@
+{
+    "title": "Acortador de URLs",
+    "description": "Aplicación desarrollada en Java con Spring, permite acortar URLs y redirigirlas de forma eficiente. Incluye un backend con manejo de excepciones centralizado, validaciones y uso de consultas JPQL para optimizar el acceso a la base de datos.",
+    "utility": "Este proyecto surgió como una práctica para profundizar en el uso de Spring Boot y JPA, pero evolucionó hacia una solución completa con buenas prácticas de arquitectura, testing con alta cobertura, y despliegue en entornos Docker. Me permitió afianzar conocimientos en consultas personalizadas con JPQL, control global de errores y despliegue de aplicaciones distribuidas.",
+    "images": [
+        "/assets/projects/acortadorURL/images/proj-acortador-img1.png",
+        "/assets/projects/acortadorURL/images/proj-acortador-img2.png",
+        "/assets/projects/acortadorURL/images/proj-acortador-img3.png",
+        "/assets/projects/acortadorURL/images/proj-acortador-img4.png"
+    ],
+    "technologies": {
+        "frontend": [
+            "Html",
+            "Css",
+            "Javascript"
+        ],
+        "backend": [
+            "Java",
+            "Spring",
+            "JPA",
+            "MySQL"
+        ],
+        "otherTechs": [],
+        "utils": [
+            "Docker",
+            "JUnit",
+            "MockMvc"
+        ]
+    },
+    "deployed": true,
+    "github": "https://github.com/GabrielOsOj/AcortadorUrl",
+    "live": "https://shortener.gabriel-ojeda.com"
+}

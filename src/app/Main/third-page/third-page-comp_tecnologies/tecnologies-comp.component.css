@@ -13,7 +13,7 @@
     justify-content: space-evenly;
 }
 
-.tecnologies_title{
+.tecnologies_title {
     width: 100%;
     height: 25%;
     position: relative;
@@ -40,8 +40,8 @@ h1 {
 
 }
 
-.tecnologies:hover h1{
-    transform:translateX(-50%) translateY(-40%) scale(1.1);
+.tecnologies:hover h1 {
+    transform: translateX(-50%) translateY(-40%) scale(1.1);
     background-color: transparent;
 }
 
@@ -74,10 +74,10 @@ h1 {
     transition: all 0.3s ease;
 }
 
-.tecnologies_icons_icon-container>img:hover{
+.tecnologies_icons_icon-container>img:hover {
     transform: translateY(-15%) scale(1.2);
-    filter: drop-shadow( 0 10px 25px var(--colors-background-color_three));
-    
+    filter: drop-shadow(0 10px 25px var(--colors-background-color_three));
+
 }
 
 /*
@@ -100,15 +100,15 @@ h1 {
 
 @media (width<1030px) {
 
-    h1{
+    h1 {
         bottom: -12px;
     }
 
-    .tecnologies_icons{
+    .tecnologies_icons {
         height: 80%;
     }
 
-    .tecnologies_icons_icon-container{
+    .tecnologies_icons_icon-container {
         width: 80px;
         height: 80px;
     }
@@ -116,30 +116,30 @@ h1 {
 }
 
 @media(width<1000px) and (width>850px) {
-    h1{
+    h1 {
         bottom: -12px;
     }
 
-    .tecnologies_icons{
+    .tecnologies_icons {
         height: 80%;
     }
 
-    .tecnologies_icons_icon-container{
+    .tecnologies_icons_icon-container {
         width: 80px;
         height: 80px;
     }
 }
 
 @media(width<851px) and (width>781px) {
-    h1{
+    h1 {
         bottom: -10px;
     }
 
-    .tecnologies_icons{
+    .tecnologies_icons {
         height: 70%;
     }
 
-    .tecnologies_icons_icon-container{
+    .tecnologies_icons_icon-container {
         width: 70px;
         height: 70px;
     }
@@ -147,15 +147,15 @@ h1 {
 
 @media (width<780px) and (width>451px) {
 
-    h1{
+    h1 {
         bottom: -12px;
     }
 
-    .tecnologies_icons{
+    .tecnologies_icons {
         height: 70%;
     }
 
-    .tecnologies_icons_icon-container{
+    .tecnologies_icons_icon-container {
         width: 60px;
         height: 60px;
     }
@@ -164,27 +164,28 @@ h1 {
 
 @media (width<450px) and (width>400px) {
 
-    h1{
+    h1 {
         bottom: -10px;
     }
 
-    .tecnologies_icons_icon-container{
+    .tecnologies_icons_icon-container {
         width: 50px;
         height: 50px;
     }
 
 }
+
 @media (width<400px) {
-    
-    h1{
+
+    h1 {
         bottom: -.5em;
     }
 
-    .tecnologies_icons{
+    .tecnologies_icons {
         height: 70%;
     }
 
-    .tecnologies_icons_icon-container{
+    .tecnologies_icons_icon-container {
         width: 40px;
         height: 40px;
     }
@@ -194,22 +195,19 @@ h1 {
 @media (width<300px) {
 
     .tecnologies_icons {
+        border: 2px solid var(--colors-test-color_one);
+    }
 
-
-    border: 2px solid var(--colors-test-color_one);
-
-}
-    
-    h1{
+    h1 {
         bottom: -.1em;
         font-size: .8em;
     }
 
-    .tecnologies_icons{
+    .tecnologies_icons {
         height: 60%;
     }
 
-    .tecnologies_icons_icon-container{
+    .tecnologies_icons_icon-container {
         width: 15px;
         height: 15px;
     }

@@ -51,8 +51,8 @@
     /* border: 1px solid red; */
 }
 
-.text-box:hover .text-box_title-container_title{
-    transform:translateY(-50%) scale(1.1);
+.text-box:hover .text-box_title-container_title {
+    transform: translateY(-50%) scale(1.1);
     background-color: transparent;
 }
 
@@ -108,7 +108,7 @@
 
 }
 
-@media (width<450px) and (width>400px){
+@media (width<450px) and (width>400px) {
 
     .text-box_title-container_title {
         font-size: 1.2em;
@@ -129,4 +129,20 @@
     .text-box_text-container_text {
         font-size: .6em;
     }
+}
+
+@media (width<300px) {
+
+
+    .text-box_title-container_title {
+        font-size: 1em;
+        bottom: -1.8em;
+
+    }
+
+    .text-box_text-container_text {
+        font-size: .6em;
+    }
+
+ 
 }

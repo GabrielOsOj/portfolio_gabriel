@@ -1,26 +1,3 @@
-.projects_modal {
-    width: 80%;
-    height: 90%;
-
-    margin: auto;
-
-    background-color: var(--colors-color-one);
-    color: var(--colors-fonts-color_two);
-    border: 4px solid var(--colors-color-seven);
-    border-radius: 2%;
-    box-sizing: border-box;
-
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    scrollbar-width: none;
-    overflow-y: scroll;
-    position: relative;
-}
-
-
-
 .project-modal {
 
     max-width: 800px;
@@ -134,7 +111,7 @@
     color: var(--colors-fonts-color_two);
     margin: 20px 0;
     padding: 0 10px;
-    text-align: center;
+    text-align: left;
 }
 
 /* Categorías de tecnologías */
@@ -206,15 +183,17 @@
     margin-top: 10px;
 }
 
-.tech-item-free, .tech-item {
+.tech-item-free,
+.tech-item {
     background: var(--colors-color-one);
     border: 1px dashed var(--colors-color-eight);
     color: var(--colors-fonts-color_one);
-    ;
+
     padding: 6px 12px;
     border-radius: 20px;
     font-size: 14px;
 }
+
 /* Botones de accion */
 .project-buttons {
     display: flex;
@@ -286,11 +265,64 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+
+    .project-modal {
+        width: 40%;
+    }
+
     .tech-categories {
         grid-template-columns: 1fr;
     }
 
     .image-slider {
         height: 300px;
+    }
+}
+
+@media (width<300px) {
+
+    .project-modal {
+        width: 75%;
+    }
+
+    .image-slider {
+        height: 300px;
+    }
+
+    .tech-categories {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+
+    }
+
+    .tech-categories-free {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+    }
+
+    .category,
+    .category-free {
+        text-align: center;
+        font-size: .6em;
+
+    }
+
+    .project-description {
+        font-size: .7em;
+    }
+
+    .tech-items, .tech-items-free {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-btn {
+
+        font-weight: 600;
+        font-size: 1rem;
+        text-align: center;
+
     }
 }

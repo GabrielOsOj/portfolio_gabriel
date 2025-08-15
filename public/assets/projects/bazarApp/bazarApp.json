@@ -16,6 +16,6 @@
     "utils": ["Docker","Junit5","Mockito","H2"]
   },
   "deployed":false,
-  "github": "url",
+  "github": "https://github.com/GabrielOsOj/bazarBackend",
   "live": ""
 }

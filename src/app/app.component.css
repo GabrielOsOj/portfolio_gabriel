@@ -84,11 +84,17 @@
 }
 
 .visible {
-    display: block;
+    display: flex;
+    justify-content: center;
 }
 
 .projects-modal>p {
     font-size: 1.5em;
+}
+
+.projects-modal-modal {
+    width: 60%;
+    height: 80%;
 }
 
 .modal-open {
