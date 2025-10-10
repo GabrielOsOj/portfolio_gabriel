@@ -38,7 +38,7 @@
   },
   {
     "title": "Acortador de URLs",
-    "description": "Aplicación web que permite acortar enlaces largos, redirigirlos de forma automática y obtener métricas de uso.",
+    "description": "Aplicación web que permite acortar enlaces, redirigirlos y obtener métricas de uso.",
     "tecnologies": [
       {
         "name": "Java"

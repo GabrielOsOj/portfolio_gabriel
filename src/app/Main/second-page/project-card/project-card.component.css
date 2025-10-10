@@ -49,8 +49,8 @@ h2{
 }
 
 .project-card_tecnologiesContainer_iconContainer{
-    width: 2.5em;
-    height: 2.5em;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 .project-card_tecnologiesContainer_iconContainer>img{
@@ -100,11 +100,11 @@ p{
 @media (width<1030px){
 
     h2{
-        font-size: 2em;
+        font-size: 1.5rem;
     }
 
     p{
-        font-size: 1.5em;
+        font-size: 1rem;
     }
 
     .project-card_tecnologiesContainer{
@@ -112,7 +112,7 @@ p{
         width: 80%;
         height: 20%;
 
-        gap: .6em;
+        gap: .6rem;
     
     }
 
@@ -122,64 +122,63 @@ p{
 @media (width<431px) and (width>400px){
     
     h2{
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 
     p{
-        font-size: 1em;
+        font-size: 1rem;
     }
 
     .project-card_tecnologiesContainer{
-        gap: .4em;
+        gap: .4rem;
     }
     
     .project-card_tecnologiesContainer_iconContainer{
-        width: 4em;
-        height: 4em;
+        width: 4rem;
+        height: 4rem;
     }
 
 }
-@media (width<400px) {
-
+@media (width<500px) {
 
     h2{
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 
     p{
         width: 70%;
-        font-size: 1em;
+        font-size: 1rem;
     }
 
     .project-card_tecnologiesContainer{
-        gap: .4em;
+        gap: .4rem;
     }
     
     .project-card_tecnologiesContainer_iconContainer{
-        width: 3em;
-        height: 3em;
+        width: 3rem;
+        height: 3rem;
     }
 
 }
 
-@media (width<300px) {
+@media (width<350px) {
 
     h2{
-        font-size: 1em;
+        font-size: 1rem;
     }
 
     p{
         width: 100%;
-        font-size: .6em;
+        font-size: .6rem;
     }
 
     .project-card_tecnologiesContainer{
-        gap: .4em;
+        gap: .4rem;
     }
     
     .project-card_tecnologiesContainer_iconContainer{
-        width: 2em;
-        height: 2em;
+        width: 2rem;
+        height: 2rem;
     }
 
 }

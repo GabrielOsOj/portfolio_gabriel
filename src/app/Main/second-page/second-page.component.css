@@ -5,6 +5,9 @@
     width: 100%;
     height: 100%;
 
+    /* height: 100dvh;
+    width: 100dvw; */
+
     display: grid;
     grid-template-columns: 1fr 6fr 6fr 1fr;
     grid-template-rows: 1fr 2fr 2fr 1fr;
@@ -73,8 +76,10 @@
 
 .carousel-item {
     position: absolute;
-    width: 300px;
-    height: 340px;
+    /* width: 300px;
+    height: 340px; */
+    width: 18rem;
+    height: 20rem;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
@@ -112,8 +117,10 @@
 }
 
 .nav-btn {
-  width: 60px;
-  height: 60px;
+  /* width: 60px;
+  height: 60px; */
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
   background: linear-gradient(135deg, #2bca3333 0%, #31b96e 100%);
   border: none;
@@ -128,8 +135,8 @@
 }
 
 .nav-btn svg {
-  width: 30px;
-  height: 30px;
+  width: 2rem;
+  height: 2rem;
   stroke: white;
   transition: transform 0.3s ease;
 }
@@ -175,9 +182,13 @@
         align-items: center;
     }
 
+    .center:hover{
+        transform: none;
+    }
+
 }
 
-@media(width<1030px) and (width>431px) {
+@media(width<=1030px) and (width>700px) {
 
     .second-page {
 
@@ -207,7 +218,7 @@
 
 }
 
-@media (width<431px) and (width>400px) {
+@media (width<=700px) and (width>=500px) {
     .second-page {
 
         grid-template-columns: .1fr 2fr 2fr.1fr;
@@ -223,26 +234,31 @@
     }
 
     .carousel-item{
-        width: 350px;
-        height: 500px;
+        width: 18rem;
+        height: 20rem;
     }
 
 }
 
-@media (width<400px) {
+@media (width<500px) {
     .second-page {
         grid-template-columns: .1fr 1fr 1fr.1fr;
         grid-template-rows: 1fr 3fr 3fr 1fr;
+        
+        height: 100dvh;
+  
     }
 
     .carousel {
         height: 70%;
     }
 
-    .carousel-item {
+    /* .carousel-item {
         width: 280px;
         height: 380px;
-    }
+    } */
+
+
 
     .right {
         display: hidden;
@@ -253,7 +269,7 @@
 
 }
 
-@media (width<300px) {
+@media (width<350px) {
     .second-page {
         grid-template-columns: .1fr 1fr 1fr.1fr;
         grid-template-rows: 1fr 3fr 3fr 1fr;
@@ -263,10 +279,10 @@
         height: 70%;
     }
 
-    .carousel-item {
-        width: 200px;
-        height: 300px;
-    }
+    /* .carousel-item {
+        width: 230px;
+        height: 330px;
+    } */
 
     .right {
         display: hidden;

@@ -14,9 +14,9 @@
             <app-contact-form></app-contact-form>
         </div>
 
-        <div *ngIf="formVisible" (click)="fnCloseMenu($event)"
+        <!-- <div *ngIf="formVisible" (click)="fnCloseMenu($event)" -->
+        <div *ngIf="isFormVisible" (click)="fnCloseMenu($event)"
          class="fourth-page_middle_form_responsive-container" >
-            <button class="fourth-page_middle_form_responsive-container_close-btn" (click)="fnCloseMenu($event)">X</button>
             <app-contact-form (click)="$event.stopPropagation()"></app-contact-form>
         </div> 
 

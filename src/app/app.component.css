@@ -1,6 +1,7 @@
 .main-page {
 
-    height: 100vh;
+    /* height: 100vh; */
+    height: 100dvh;
     scroll-snap-type: y mandatory;
     flex-direction: column;
 

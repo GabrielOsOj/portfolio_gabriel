@@ -4,6 +4,8 @@
 
     width: 100%;
     height: 100%;
+    /* height: 100dvh;
+    width: 100dvw; */
     padding: 0;
     margin: 0;
 
@@ -101,20 +103,20 @@ h5 {
 
 .first-page_center-name_presentation {
     align-self: flex-start;
-    font-size: .9em;
+    font-size: .9rem;
     margin-bottom: -2em;
 
 }
 
 .first-page_center-name_title {
-    font-size: 9em;
+    font-size: 9rem;
 
 }
 
 .first-page_center-name_subtitle {
     align-self: flex-end;
-    font-size: .9em;
-    margin-top: -2em;
+    font-size: .9rem;
+    margin-top: -2rem;
 }
 /* se que no se usan los important, pero era la unica forma en la que andaba */
 .first-page_center-name:hover .first-page_center-name_title{
@@ -153,7 +155,7 @@ h5 {
 
 }
 
-@media (width < 900px) and (width>431px){
+@media (width <= 900px) and (width>700px){
     .first-page {
 
         grid-template-columns: repeat(3, 2fr);
@@ -173,37 +175,40 @@ h5 {
 
 }
 
-@media (width<431px) and (width>389px){
+@media (width<=700px) and (width>400px){
 
 
     .first-page_center-name_presentation {
-        margin-bottom: -1em;
+        margin-bottom: -1rem;
     }
 
     .first-page_center-name_title {
-        font-size: 5em;
+        font-size: 5rem;
     }
 
     .first-page_center-name_subtitle {
-        margin-top: -1em;
+        margin-top: -1rem;
     }
 }
 
-@media(width<389px){
+@media(width<=400px){
 
+    .first-page{
+        height: 100dvh;
+    }
 
     .first-page_center-name_presentation {
-        margin-bottom: -.8em;
-        font-size: .6em;
+        margin-bottom: -.8rem;
+        font-size: .8rem;
     }
 
     .first-page_center-name_title {
-        font-size: 2.9em;
+        font-size: 4rem;
     }
 
     .first-page_center-name_subtitle {
-        margin-top: -.8em;
-        font-size: .5em;
+        margin-top: -.8rem;
+        font-size: .8rem;
     }
 }
 

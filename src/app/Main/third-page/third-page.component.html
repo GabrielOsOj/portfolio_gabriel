@@ -7,7 +7,8 @@
     <div class="third-page_middle">
 
         <div class="third-page_middle_tecnologies">
-            @for (tecno of tecnosDTO; track $index) {
+            <!-- @for (tecno of tecnosDTO; track $index) { -->
+            @for (tecno of tecnosDTO.slice(0,3); track $index) {
             <div class="third-page_middle_tecnologies_container
                 animate__animated animate__flipInX
             ">

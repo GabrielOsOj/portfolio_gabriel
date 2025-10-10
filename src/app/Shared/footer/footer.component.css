@@ -84,10 +84,14 @@
 
 }
 
+.footer-scrool_sign:hover .footer-scroll_sign-text{
+    color: var(--colors-fonts-color_three);
+    cursor: pointer;
+}
+
 .lastPage {
     grid-area: mid;
     width: 100%;
-
 }
 
 @media (width < 900px) and (width>431px) {

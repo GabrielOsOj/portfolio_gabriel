@@ -6,6 +6,7 @@ import { ContactDataService } from './fourth-page-services/contact-data/contact-
 import { ContactDataIF } from './fourth-page-models/contact-data-if';
 import { ContactFormComponent } from "./fourth-page-comp_contact-form/contact-form.component";
 import { CommonModule } from '@angular/common';
+import { FormOpenCloseService } from './fourth-page-services/form-open_close/form-open-close.service';
 
 @Component({
   selector: 'app-fourth-page',
@@ -20,18 +21,33 @@ export class FourthPageComponent {
 
   contactData:ContactDataIF;
 
-  formVisible:boolean = false;
+  // formVisible:boolean = false;
+  formVisible:boolean = true;
+  isFormVisible:boolean = false;
   
-  constructor(private contactDataSv:ContactDataService){
+  constructor(private contactDataSv:ContactDataService,
+    private openCloseSv:FormOpenCloseService
+  ){
     this.contactData = contactDataSv.getContactData();
+    openCloseSv.$isContactFormOpen.subscribe(status => {
+      this.isFormVisible = status;
+    });
   }
 
-  public fnOpenMenu():void{
-    this.formVisible = true;
-  }
+  // public fnOpenMenu():void{
+  //   this.formVisible = true;
+  // }
+
+  // public fnCloseMenu(event:any):void{
+  //   this.formVisible = false;
+  // }
 
   
+  public fnOpenMenu():void{
+    this.openCloseSv.openFormModal()
+  }
+
   public fnCloseMenu(event:any):void{
-    this.formVisible = false;
+    this.openCloseSv.closeFormModal()
   }
 }
