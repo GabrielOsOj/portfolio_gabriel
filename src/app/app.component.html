@@ -1,6 +1,8 @@
-<section [ngClass]="{'main-page':true,'modal-open':isProjectModalOpen}">
-
-    <div class="main-page-first_page" #presentation>
+<!-- <section [ngClass]="{'main-page':true,'modal-open':isProjectModalOpen}"> -->
+<section class="main-page">
+    <app-navbar [animationsActive]="false" class="app-navbar 
+    animate__animated animate__fadeInDown animate__delay-2s"></app-navbar>
+    <!-- <div class="main-page-first_page" #presentation>
         <app-first-page *ngIf="ArIsVisible[0]"></app-first-page>
     </div>
     <div class="main-page-second_page" #projects>
@@ -11,7 +13,14 @@
     </div>
     <div class="main-page-fourth-page" #contact>
         <app-fourth-page *ngIf="ArIsVisible[3]"></app-fourth-page>
-    </div> 
+    </div>  -->
+    <div class="app-middle">
+        <router-outlet></router-outlet>
+    </div>
+
+    <app-footer [animationsActive]="false" class="app-footer 
+    animate__animated animate__fadeInUp animate__delay-2s" [nextPage]="'n'"></app-footer>
+
 </section>
 
 <section class="navbar-menu-mobile" *ngIf="isMenuOpen">
@@ -21,9 +30,9 @@
     </div>
     <div class="navbar-menu-mobile_titles-container">
 
-        <h1 class="animate__animated animate__pulse" (click)="goToSec('projects')">PROYECTOS</h1>
-        <h1 class="animate__animated animate__pulse" (click)="goToSec('tecnologies')">TECNOLOGIAS</h1>
-        <h1 class="animate__animated animate__pulse" (click)="goToSec('contact')">CONTACTO</h1>
+        <h1 class="animate__animated animate__pulse" (click)="goToSec('second')">PROYECTOS</h1>
+        <h1 class="animate__animated animate__pulse" (click)="goToSec('third')">TECNOLOGIAS</h1>
+        <h1 class="animate__animated animate__pulse" (click)="goToSec('fourty')">CONTACTO</h1>
 
     </div>
     <div class="navbar-menu-mobile-icon_container">
@@ -36,4 +45,3 @@
 >
     <app-projects-modal class="project-modal-modal"></app-projects-modal>
 </section>
-<!-- <router-outlet></router-outlet> -->

@@ -1,12 +1,8 @@
-.main-page {
-
-    /* height: 100vh; */
+/* .main-page {
     height: 100dvh;
     scroll-snap-type: y mandatory;
     flex-direction: column;
-
     scrollbar-width: none;
-
 }
 
 .main-page>div {
@@ -22,6 +18,43 @@
 .main-page-third_page,
 .main-page-fourth-page {
     background-color: var(--colors-color-one);
+} 
+*/
+
+.main-page{
+    width: 100dvw;
+    height: 100dvh;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .5fr 1fr 1fr .5fr;
+
+    grid-template-areas: 
+    "h h h h h"
+    "m m m m m"
+    "m m m m m"
+    "f f f f f";
+
+    background-color: var(--colors-color-one);  
+}
+
+.app-navbar{
+    grid-area: h;
+    /* border: 1px solid red; */
+    /* width: 80%; */
+}
+
+.app-middle{
+    grid-area: m;
+    /* border: 1px solid blue; */
+}
+
+.app-footer{
+    grid-area: f;
+    /* border:1px solid yellow; */
+    /* width: 80%; */
+
 }
 
 /*menu mobile styles*/
@@ -30,8 +63,8 @@
     position: fixed;
     top: 0;
     left: 1;
-    width: 100vw;
-    height: 100vh;
+    width: 100dvw;
+    height: 100dvh;
     background-color: var(--colors-color-one);
     z-index: 999;
 
@@ -67,7 +100,7 @@
     justify-content: flex-start;
     align-items: center;
 
-    font-size: 1.2em;
+    font-size: 1.2rem;
     color: var(--colors-fonts-color_one);
 
 }
@@ -90,7 +123,7 @@
 }
 
 .projects-modal>p {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 .projects-modal-modal {
@@ -103,10 +136,15 @@
     overflow: hidden;
 }
 
+@media(width<=1030px) and (width>=768px){}
+
 @media(width<769px) {
     .navbar-menu-mobile_titles-container {
 
-        font-size: .8em;
+        font-size: .8rem;
 
     }
 }
+
+@media (width<768px) and (width>576px){}
+@media (width<576px) and (width>=350px){} 

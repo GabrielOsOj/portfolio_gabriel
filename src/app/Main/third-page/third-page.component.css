@@ -3,22 +3,7 @@
 
     width: 100%;
     height: 100%;
-    /* height: 100dvh; */
-    /* width: 100dvw; */
 
-    display: grid;
-    grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
-    grid-template-rows: 1fr 3fr 3fr 1fr;
-
-    position: relative;
-
-    grid-template-areas:
-        "nav nav nav nav nav"
-        "mid mid mid mid mid"
-        "mid mid mid mid mid"
-        "footer footer footer footer footer";
-
-    overflow: hidden;
 }
 
 /*background style*/
@@ -26,6 +11,7 @@
     /* background-color: var(--colors-background-color_three); */
 
     background: radial-gradient(circle, var(--colors-background-color_three) 0%, var(--colors-color-one) 70%);
+    /* background: radial-gradient(circle, red 0%, blue 70%); */
 
     width: 75%;
     height: 75%;
@@ -42,22 +28,14 @@
     border-radius: 50%;
 }
 
-/* Header */
-.third-page_navbar {
-
-    grid-area: nav;
-    /* border: 1px solid violet; */
-}
 
 /* middle */
 .third-page_middle {
 
-    grid-area: mid;
-
     /* border: 1px solid greenyellow; */
-
+    position: relative;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     gap: 2rem;
 
@@ -80,6 +58,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    gap: 2rem;
 
     /* border: 1px solid red; */
 }
@@ -95,6 +74,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap:2rem;
     /* align-items: center; */
 
     /* border: 1px solid blue; */
@@ -114,13 +94,11 @@
 /* Footer */
 .third-page_footer {
 
-    grid-area: footer;
-
+    /* grid-area: footer; */
     /* border: 1px solid orange; */
 }
 
 /* responsive */
-
 @media (width<1030px) {
 
     .third-page_middle {
@@ -130,7 +108,6 @@
     }
 
     /*tecnologies and about me*/
-
     .third-page_middle_tecnologies,
     .third-page_middle_about-me-and-studies {
         height: 100%;
@@ -153,8 +130,9 @@
 @media(width<=1030px) and (width>=768px) {
 
     .third-page_middle_about-me-and-studies {
-        justify-content: flex-start;
-        gap: 1em;
+        justify-content: center;
+        align-items: center;
+        gap:1rem;
         width: 80%;
         height: 70%;
     }
@@ -170,6 +148,7 @@
 
     .third-page_middle {
         /* overflow: hidden; */
+        gap: 1rem;
     }
 
     .third-page_middle_tecnologies,
@@ -198,7 +177,6 @@
 
     }
 
-
 }
 
 @media (width<576px) {
@@ -208,8 +186,6 @@
 }
 
 @media (width<576px) and (width>=350px) {
-
-
 
     .third-page_middle_tecnologies {
         width: 90%;
@@ -226,18 +202,3 @@
     }
 
 }
-
-/* resposive sizes */
-/*
-@media (width<1030px){}
-@media(width<=1030px) and (width>=768px){}
-@media (width<768px) and (width>576px){}
-@media (width<768px) and (width>576px){}
-@media (width<576px) and (width>=350px){}
-
-@media (width<1030px) {}
-@media(width<1030px) and (width>431px){}
-@media (width<431px) and (width>400px){}
-@media (width<400px) {}
-
-*/

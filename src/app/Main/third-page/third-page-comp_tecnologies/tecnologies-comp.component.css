@@ -32,7 +32,7 @@ h1 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -1.25rem;
+    bottom: -.3rem;
     background-color: var(--colors-color-one);
 
     /* border: 1px solid pink; */
@@ -101,7 +101,7 @@ h1 {
 @media (width<1030px) and (width>991px) {
 
     h1 {
-        bottom: -12px;
+        bottom: -1.2rem;
     }
 
     .tecnologies_icons {

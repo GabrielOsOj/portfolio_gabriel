@@ -6,23 +6,17 @@
     height: 100%;
 
     display: grid;
-    grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr 1fr 1.5fr 1.5fr;
     grid-template-rows: 1fr;
 
     grid-template-areas:
-
         "icon icon space buttons buttons"
-
     ;
 
-    overflow: hidden;
-    
 }
 
 .navbar>div {
-
     height: 100%;
-
 }
 
 /* icon navbar*/
@@ -42,6 +36,7 @@
     width: 22%;
     height: 50%;
 }
+
 .navbar-icon_icon-container:hover{
     animation-name: shakeX;
     animation-duration: 1s;
@@ -55,11 +50,9 @@
     object-position: center;
 }
 
-
 /*buttons navbar*/
 .navbar-buttons {
     width: 100%;
-    font-size: .5em;
 
     grid-area: buttons;
 
@@ -73,8 +66,11 @@
 
 }
 
-.navbar-buttons-proyect:hover,
-.navbar-buttons-contact:hover{
+.navbar-buttons-btn>h1{
+    font-size: 1rem;
+}
+
+.navbar-buttons-btn:hover{
     color: var(--colors-fonts-color_one);
 }
 
@@ -127,7 +123,7 @@
     }
 
     .navbar-buttons {
-        font-size: 1.2em;
+        font-size: 1rem;
     }
 }
 

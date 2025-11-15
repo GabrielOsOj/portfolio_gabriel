@@ -18,8 +18,8 @@
 /*icon styles*/
 
 .icon_img-container {
-    width: 9rem;
-    height: 9rem;
+    width: 5rem;
+    height: 5rem;
 
     /* border: 1px solid blue; */
 }
@@ -39,7 +39,6 @@
 .icon_img-container:hover .icon_img-container_img {
     transform: scale(1.1);
     filter: grayscale(0);
-
 }
 
 .icon_img-container:active .icon_img-container_img {

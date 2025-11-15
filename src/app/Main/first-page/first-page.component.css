@@ -4,34 +4,15 @@
 
     width: 100%;
     height: 100%;
-    /* height: 100dvh;
-    width: 100dvw; */
-    padding: 0;
-    margin: 0;
 
-    display: grid;
-    grid-template-columns: repeat(4, 2fr);
-    grid-template-rows: 1fr 3fr 3fr 1fr;
-
-    position: relative;
-
-    grid-template-areas:
-
-        "nav nav nav nav"
-        "mid mid mid mid"
-        "mid mid mid mid"
-        "footer footer footer footer ";
-
-    ;
-
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 /*background style*/
 .background-style_light {
-    /* background-color: var(--colors-background-color_one);
-     */
 
     background: radial-gradient(circle, var(--colors-background-color_one) 0%, var(--colors-color-one) 70%);
 
@@ -50,26 +31,12 @@
     border-radius: 50%;
 }
 
-/*navbar*/
-.first-page_navbar {
-    /*
-    grid-column: 1/12;
-    grid-row: 1; */
-
-    grid-area: nav;
-
-    /* border: 1px solid red; */
-}
 
 /*center box*/
 .first-page_center {
 
-    /* grid-column: 3/10; */
-    /* grid-row: 3/7; */
-
-    grid-area: mid;
-
-    /* border: 1px solid #0ff; */
+    width: 100%;
+    height: 100%;
 
     display: flex;
     align-items: center;
@@ -92,7 +59,6 @@
     align-items: center;
 
     /* border: 1px solid red; */
-
 }
 
 .first-page_center-name>h1,
@@ -105,12 +71,10 @@ h5 {
     align-self: flex-start;
     font-size: .9rem;
     margin-bottom: -2em;
-
 }
 
 .first-page_center-name_title {
     font-size: 9rem;
-
 }
 
 .first-page_center-name_subtitle {
@@ -118,8 +82,9 @@ h5 {
     font-size: .9rem;
     margin-top: -2rem;
 }
+
 /* se que no se usan los important, pero era la unica forma en la que andaba */
-.first-page_center-name:hover .first-page_center-name_title{
+.first-page_center-name:hover .first-page_center-name_title {
     transform: scale(1.4);
 }
 
@@ -136,46 +101,11 @@ h5 {
 
 /**/
 
-@media (width>900px) {
-    .first-page {
+@media (width>900px) {}
 
-        grid-template-columns: repeat(3, 2fr);
-        grid-template-rows: 1fr 2fr 2fr 1fr;
+@media (width <=900px) and (width>700px) {}
 
-        grid-template-areas:
-
-            "nav nav nav"
-            "mid mid mid"
-            "mid mid mid"
-            "footer footer footer";
-
-        ;
-        grid-template-columns: 1fr;
-    }
-
-}
-
-@media (width <= 900px) and (width>700px){
-    .first-page {
-
-        grid-template-columns: repeat(3, 2fr);
-        grid-template-rows: 1fr 3fr 3fr 1fr;
-
-        grid-template-areas:
-
-            "nav nav nav"
-            "mid mid mid"
-            "mid mid mid"
-            "footer footer footer";
-
-        ;
-        grid-template-columns: 1fr;
-    }
-
-
-}
-
-@media (width<=700px) and (width>400px){
+@media (width<=700px) and (width>400px) {
 
 
     .first-page_center-name_presentation {
@@ -191,11 +121,7 @@ h5 {
     }
 }
 
-@media(width<=400px){
-
-    .first-page{
-        height: 100dvh;
-    }
+@media(width<=400px) {
 
     .first-page_center-name_presentation {
         margin-bottom: -.8rem;
@@ -211,4 +137,3 @@ h5 {
         font-size: .8rem;
     }
 }
-

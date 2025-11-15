@@ -5,25 +5,28 @@
     height: 100%;
 
 
-    /* display: flex;
+    display: flex;
     justify-content: space-between;
-    align-items: center; */
+    align-items: center;
 
+    /* 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
 
         "social mid mid mid next"
-    ;
-
+    ; 
+    */
+ 
     overflow: hidden;
+    z-index: 100;
 }
 
 .footer-social {
     width: 100%;
     height: 100%;
 
-    grid-area: social;
+    /* grid-area: social; */
     /* border: 1px solid pink; */
 
     display: flex;

@@ -16,33 +16,33 @@
 
 /* contact info text*/
 
-.contact-info_text{
-    /* border: 1px solid purple; */
-    height: 60%;
+.contact-info_text {
     
-}
-.contact-info_text_title-container{
-    width: 100%;
-    height: 20%;
+    height: 40%;
+    box-sizing: border-box;
+    border-radius: 3%;
+    border: 4px solid var(--colors-color-seven);
 
-    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
 }
 
-.contact-info_text_title-container_title {
+.contact-info_text_title {}
+
+.contact-info_text_title{
     color: var(--colors-fonts-color_one);
-    background-color: var(--colors-color-one);
+    /* background-color: var(--colors-color-one); */
 
     margin: 0;
 
-    font-size: 2.5rem;
+    font-size: 2rem;
+    width: 100%;
+    height: 20%;
+    text-align: center;
 
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    bottom: -40%;
-
-    /* border: 1px solid green; */
-    transition: all 0.3s ease-in-out;
+    position: relative;
 }
 
 .contact-info_text_text {
@@ -50,23 +50,18 @@
     font-size: 1.2rem;
     text-align: center;
 
-    box-sizing: border-box;
-    border-radius: 3%;
-    border: 4px solid var(--colors-color-seven);
-    
     margin: 0;
-    padding: 10% 0;
 
     transition: all 0.3s ease-in-out;
 
 }
 
-.contact-info_text:hover .contact-info_text_title-container_title{
+.contact-info_text:hover .contact-info_text_title-container_title {
     transform: translateX(-50%) translateY(-40%) scale(1.1);
     background-color: transparent;
 }
 
-.contact-info_text:hover .contact-info_text_text{
+.contact-info_text:hover .contact-info_text_text {
     color: var(--colors-fonts-color_three)
 }
 
@@ -78,54 +73,55 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    
-
-    /* border: 1px solid paleturquoise; */
-}
-
-
-@media (width<1030px) {
 
 }
 
-@media(width<=1030px) and (width>=768px){
-
-
+@media (width>1030px) {
+    .contact-info_text_title{
+        margin: 0;
+        padding: 0;
+    }
     .contact-info_text_text{
+        margin: 0;
+    }
+}
+
+@media(width<=1030px) and (width>=768px) {
+
+    .contact-info_text_text {
         font-size: 1.8rem;
     }
 
 }
 
-@media (width<768px) and (width>576px){
+@media (width<768px) and (width>576px) {
 
-    .contact-info{
+    .contact-info {
         align-items: flex-start;
-    
     }
 
     .contact-info_text_title-container_title {
-  
+
         margin: 0;
-    
+
         font-size: 1.8rem;
         bottom: -.7rem;
-    
+
         /* border: 1px solid green; */
     }
-    
+
     .contact-info_text_text {
-    
+
         width: 100%;
         height: auto;
 
         font-size: 1.1rem;
         text-align: center;
-    
+
         box-sizing: border-box;
         border-radius: 3%;
-        border: 4px solid var(--colors-color-seven);
-        
+        /* border: 4px solid var(--colors-color-seven); */
+
         margin: 0;
         padding: 10% 0;
     }
@@ -133,26 +129,26 @@
     .contact-info_icons {
         width: 100%;
         height: 40%;
-    
         /* border: 1px solid paleturquoise; */
     }
 
 }
+
 @media (width<576px) and (width>=350px) {
-  
+
 
     .contact-info_text_title-container_title {
-  
+
         margin: 0;
-    
+
         font-size: 1.6rem;
         /* transform: translateY(-10px); */
-    
+
         /* border: 1px solid green; */
     }
-    
+
     .contact-info_text_text {
-    
+
         width: 100%;
         height: 68%;
 
@@ -169,23 +165,23 @@
         height: 40%;
 
         align-items: flex-start;
-    
+
         /* border: 1px solid paleturquoise; */
     }
 }
 
 @media (width<300px) {
-  
+
     .contact-info_text_title-container_title {
-  
+
         margin: 0;
-    
+
         font-size: 1.2em;
         bottom: -.6em;
-    
+
         /* border: 1px solid green; */
     }
-    
+
     .contact-info_text_text {
         font-size: .8em;
     }
@@ -195,7 +191,7 @@
         height: 40%;
 
         align-items: flex-start;
-    
+
         /* border: 1px solid paleturquoise; */
     }
 }
